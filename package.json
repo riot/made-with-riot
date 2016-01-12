@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Riot.js components showcase",
   "main": "gulpfile.js",
-  "dependencies": {
+  "devDependencies": {
+    "run-sequence": "^1.1.5",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
@@ -23,11 +24,8 @@
     "path": "^0.12.7",
     "riot": "^2.3.13"
   },
-  "devDependencies": {
-    "run-sequence": "^1.1.5"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
