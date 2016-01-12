@@ -1,0 +1,62 @@
+@import '../variables';
+
+card-list {
+    position:relative;
+    z-index: $z-layer-10;
+    display: block;
+    max-width: $width-desktop;
+    margin: 250px auto 0;
+    padding:0 20px;
+}
+
+.card-list {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-list__card {
+    width: 30%;
+    margin-bottom: 5%;
+    position: relative;
+
+    .card-list__image {
+        border-radius: 4px;
+
+        img {
+            width:100%;
+            border-radius:4px;
+            box-shadow:0 5px 25px rgba(0, 0, 0, 0.02);
+        }
+    }
+
+    .card-list__name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin:15px 0 5px;
+    }
+
+    .card-list__url {
+        font-size: 1.5rem;
+        color: $color-lightgrey;
+    }
+
+    .card-list__details {
+        position:absolute;
+        bottom:0;
+        right:0;
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size:1.3rem;
+        background: $color-blue;
+        color: #fff;
+        padding:8px 20px;
+        border-radius:4px;
+
+        transition: background 0.2s linear;
+
+        &:hover {
+            background: saturate(darken($color-blue, 20%), 10%);
+        }
+    }
+}

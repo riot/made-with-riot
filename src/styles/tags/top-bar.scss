@@ -1,0 +1,127 @@
+@import '../variables';
+
+top-bar {
+    display:block;
+    overflow:auto;
+}
+
+.top-bar {
+    position: fixed;
+    z-index: $z-floor;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    padding: 0 20px;
+    margin: 40px auto;
+
+    &.state--compact {
+        min-width: 100%;
+        max-width: 100%;
+        left:0;
+        z-index: $z-layer-30;
+        background: #fff;
+        margin:0;
+        padding:18px 20px;
+        box-shadow:0 5px 12px rgba(0, 0, 0, 0.06), 0 1px 0 rgba(0, 0, 0, 0.03);
+        opacity: 0;
+        pointer-events: none;
+
+        transition: opacity 0.2s linear;
+
+        &.state--visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .top-bar__landing {
+
+            img {
+                width: 74px;
+                margin-top: -4px;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+
+        > * {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
+
+.top-bar__search-bar {
+    justify-content: flex-start !important;
+
+    .svg-icon {
+        width: 15px;
+        height: 15px;
+        fill: $color-violet;
+        margin-right: 10px;
+    }
+
+    input {
+        border: none;
+        background: transparent;
+        font-size: 1.3rem;
+        padding:10px 0;
+        outline:none;
+        font-weight: 500;
+
+        transition:box-shadow linear 0.2s;
+
+        &:hover {
+            box-shadow:0 2px 0 $color-lightgrey;
+        }
+
+        &:focus {
+            box-shadow:0 2px 0 $color-lightgrey;
+        }
+    }
+}
+
+.top-bar__landing {
+    flex:2;
+    text-align: center;
+    flex-direction: column;
+
+    img {
+        margin-left: -30px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        font-weight: normal;
+        margin-top: 30px;
+    }
+}
+
+.top-bar__right-menu {
+    justify-content: flex-end !important;
+}
+
+.top-bar__link {
+    font-size: 13px;
+    color: $color-violet;
+    padding:5px;
+    font-weight: 500;
+
+    transition:box-shadow linear 0.2s;
+
+    &:hover {
+        box-shadow:0 2px 0 $color-lightgrey;
+    }
+
+    &:not(:last-child) {
+        margin-right:50px;
+    }
+
+    &.state--attention {
+        color: $color-pink;
+    }
+}

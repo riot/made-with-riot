@@ -1,0 +1,41 @@
+@import 'variables';
+
+//asd
+html {
+    font-size: $font-size;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: 1.5rem;
+    color: $color-grey;
+
+    margin: 0;
+    min-height:100vh;
+    background:$color-white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    color: inherit;
+}
+
+.svg-icon {
+    display: inline-block;
+}
+
+.container {
+    max-width: $width-desktop;
+    margin:0 auto;
+    padding:0 20px;
+}
