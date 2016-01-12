@@ -1,16 +1,16 @@
 @import '../variables';
 
 card-list {
-    position:relative;
-    z-index: $z-layer-10;
     display: block;
+    position: relative;
+    z-index: $z-layer-10;
     max-width: $width-desktop;
-    margin: 250px auto 0;
-    padding:0 20px;
+    margin: 25rem auto 0;
+    padding: 0 2rem;
 }
 
 .card-list {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -21,19 +21,19 @@ card-list {
     position: relative;
 
     .card-list__image {
-        border-radius: 4px;
+        border-radius: 0.4rem;
 
         img {
-            width:100%;
-            border-radius:4px;
-            box-shadow:0 5px 25px rgba(0, 0, 0, 0.02);
+            width: 100%;
+            border-radius: 0.4rem;
+            box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.02);
         }
     }
 
     .card-list__name {
         font-size: 1.5rem;
         font-weight: 500;
-        margin:15px 0 5px;
+        margin: 1.5rem 0 0.5rem;
     }
 
     .card-list__url {
@@ -42,16 +42,16 @@ card-list {
     }
 
     .card-list__details {
-        position:absolute;
-        bottom:0;
-        right:0;
-        margin-bottom: 5px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 0.5rem;
         font-weight: 500;
-        font-size:1.3rem;
+        font-size: 1.3rem;
         background: $color-blue;
         color: #fff;
-        padding:8px 20px;
-        border-radius:4px;
+        padding: 8px 20px;
+        border-radius: 0.4rem;
 
         transition: background 0.2s linear;
 

@@ -6,23 +6,23 @@ top-bar {
 }
 
 .top-bar {
+    width: 100%;
     position: fixed;
     z-index: $z-floor;
     top: 0;
     left: 0%;
-    width: 100%;
-    padding: 0 20px;
-    margin: 40px auto;
+    padding: 0 2rem;
+    margin: 4rem auto;
 
     &.state--compact {
         min-width: 100%;
         max-width: 100%;
-        left:0;
+        left: 0;
         z-index: $z-layer-30;
         background: #fff;
-        margin:0;
-        padding:18px 20px;
-        box-shadow:0 5px 12px rgba(0, 0, 0, 0.06), 0 1px 0 rgba(0, 0, 0, 0.03);
+        margin: 0;
+        padding: 1.8rem 2rem;
+        box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.06), 0 1rem 0 rgba(0, 0, 0, 0.03);
         opacity: 0;
         pointer-events: none;
 
@@ -59,45 +59,45 @@ top-bar {
     justify-content: flex-start !important;
 
     .svg-icon {
-        width: 15px;
-        height: 15px;
+        width: 1.5rem;
+        height: 1.5rem;
         fill: $color-violet;
-        margin-right: 10px;
+        margin-right: 1rem;
     }
 
     input {
         border: none;
         background: transparent;
         font-size: 1.3rem;
-        padding:10px 0;
-        outline:none;
+        padding: 1rem 0;
         font-weight: 500;
 
-        transition:box-shadow linear 0.2s;
+        transition: box-shadow linear 0.2s;
 
         &:hover {
-            box-shadow:0 2px 0 $color-lightgrey;
+            box-shadow:0 0.2rem 0 $color-lightgrey;
         }
 
         &:focus {
-            box-shadow:0 2px 0 $color-lightgrey;
+            outline: none;
+            box-shadow:0 0.2rem 0 $color-lightgrey;
         }
     }
 }
 
 .top-bar__landing {
-    flex:2;
+    flex: 2;
     text-align: center;
     flex-direction: column;
 
     img {
-        margin-left: -30px;
+        margin-left: -3rem;
     }
 
     h1 {
         font-size: 1.9rem;
         font-weight: normal;
-        margin-top: 30px;
+        margin-top: 3rem;
     }
 }
 
@@ -106,19 +106,19 @@ top-bar {
 }
 
 .top-bar__link {
-    font-size: 13px;
+    font-size: 1.3rem;
     color: $color-violet;
-    padding:5px;
+    padding: 0.5rem;
     font-weight: 500;
 
-    transition:box-shadow linear 0.2s;
+    transition: box-shadow linear 0.2s;
 
     &:hover {
-        box-shadow:0 2px 0 $color-lightgrey;
+        box-shadow: 0 2px 0 $color-lightgrey;
     }
 
     &:not(:last-child) {
-        margin-right:50px;
+        margin-right: 5rem;
     }
 
     &.state--attention {
