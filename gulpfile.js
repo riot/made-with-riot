@@ -137,7 +137,7 @@ gulp.task('compile:js', () => {
 });
 
 gulp.task('compile:riot', () => {
-    return gulp.src(opts.path.riotComponents + '/*.tag')
+    return gulp.src(opts.path.riotComponents + '/*.tag.html')
         .pipe(riot())
 
         .on('error', handleError)
@@ -190,7 +190,7 @@ gulp.task('lift', () => {
 
 gulp.task('watch:all', () => {
     gulp.watch([opts.path.assets + '/styles/**/*.scss', opts.path.assets + 'styles/**/*.css'], ['compile:styles']);
-    gulp.watch([opts.path.assets + '/js/**/*.js', opts.path.assets + '/js/**/*.tag'], ['compile:scripts']);
+    gulp.watch([opts.path.assets + '/js/**/*.js', opts.path.assets + '/js/**/*.tag.html'], ['compile:scripts']);
     gulp.watch([opts.path.images + '/**', 'resources/**'], ['compile:images']);
     gulp.watch([opts.path.assets + '/app.html'], ['compile:html']);
 });
