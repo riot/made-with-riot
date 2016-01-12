@@ -1,0 +1,15 @@
+@import '../variables';
+
+right-drawer{
+  display: block;
+  position: fixed;
+  right: 0px;
+  top:0px;
+  transform: translateZ(0);
+  height: 100vh;
+  width: 20vh;
+  min-width: 300px;
+  background-color: rgba(0,0,0,0.8);
+  color:$color-white;
+  z-index: $z-layer-50;
+}
