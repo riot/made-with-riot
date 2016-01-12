@@ -63,7 +63,10 @@
                     var opacityRatio = 1 - Math.floor(pageYOffset) * 0.008;
                     var moveRatio = 1 - Math.floor(pageYOffset) * 0.5;
 
-                    self.mainTopBar.style.transform = 'scale(' + scaleRatio + ') translate3d(0, ' + moveRatio + 'px, 0)';
+                    var transformValue = 'scale(' + scaleRatio + ') translate3d(0, ' + moveRatio + 'px, 0)';
+
+                    self.mainTopBar.style.webkitTransform = transformValue;
+                    self.mainTopBar.style.transform = transformValue;
                     self.mainTopBar.style.opacity = opacityRatio;
                 }
 
