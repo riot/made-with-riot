@@ -162,7 +162,7 @@ gulp.task('compile:html', ['clean:html'], () => {
         .pipe(notify({message: opts.messages.htmlCompiled}));
 });
 
-gulp.task('compile:all', ['compile:styles', 'compile:scripts', 'compile:html'], () => {
+gulp.task('compile:all', ['compile:styles', 'compile:scripts', 'compile:html', 'compile:images'], () => {
     return notify({message: opts.messages.allCompiled});
 });
 
