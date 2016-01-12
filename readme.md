@@ -8,7 +8,7 @@ Made With Riot is a public showcase for websites, webapps and components made us
 
 ## Working locally
 
-To run the project follow the steps bellow after cloning the repository:
+To run the project, follow the steps bellow after cloning the repository:
 
 ```bash
 npm install
@@ -22,6 +22,6 @@ Then access the application on http://localhost:8000/
 
 For developing, simply run the command `gulp watch:all` for automatic re-compiling on file changes.
 
-The developing environment is using Sass as CSS pre-processor.
+The project is using Sass as CSS pre-processor and actually all tags styles are in separated files.
 
 (WIP)
