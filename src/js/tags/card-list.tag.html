@@ -2,7 +2,7 @@
 
     <div class="card-list">
 
-        <div class="card-list__card" each="{ opts.projects }">
+        <div class="card-list__card" each="{ opts.projects }" data-filter="{ name.toLowerCase() } { imgAlt.toLowerCase() } { url.topLowerCase() }">
             <div class="card-list__image">
                 <img src="{ imgUrl }" alt="{ imgAlt }" />
             </div>
