@@ -82,6 +82,10 @@
             });
         });
 
+        hideMainTopBar() {
+            self.mainTopBar.style.opacity = 0;
+        }
+
         showCompactMenu() {
             console.log()
             if(!self.compactTopBar.classList.contains(visibleClass)) {
