@@ -75,8 +75,14 @@ card-list {
     }
 }
 
+@include MediumScreen {
+    .card-list__card {
+        width:48%;
+    }
+}
+
 @include SmallScreen {
-    body {
-        color: red
+    .card-list__card {
+        width:100%;
     }
 }
