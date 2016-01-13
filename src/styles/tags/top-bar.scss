@@ -1,8 +1,8 @@
 @import '../variables';
 
 top-bar {
-    display:block;
-    overflow:auto;
+    display: block;
+    overflow: auto;
 }
 
 .top-bar {
@@ -10,7 +10,7 @@ top-bar {
     position: fixed;
     z-index: $z-floor;
     top: 0;
-    left: 0%;
+    left: 0;
     padding: 0 2rem;
     margin: 4rem auto;
 
@@ -22,7 +22,7 @@ top-bar {
         background: #fff;
         margin: 0;
         padding: 1.8rem 2rem;
-        box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.06), 0 1rem 0 rgba(0, 0, 0, 0.03);
+        box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.06), 0 0.1rem 0 rgba(0, 0, 0, 0.03);
         opacity: 0;
         pointer-events: none;
 

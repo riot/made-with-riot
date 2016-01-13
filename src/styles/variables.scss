@@ -34,8 +34,10 @@ $z-layer-30:        30;
 $z-layer-40:        40;
 $z-layer-50:        50;
 
-
-// main-widths
+// Screen sizes
 // --------------------------------------------------
 
-$width-desktop:     1350px;
+$screen-small:      768px;
+$screen-medium:     992px;
+$screen-large:      1350px;
+$screen-xlarge:     1700px;

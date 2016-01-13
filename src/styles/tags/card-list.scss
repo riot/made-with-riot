@@ -1,10 +1,11 @@
 @import '../variables';
+@import '../helpers';
 
 card-list {
     display: block;
     position: relative;
     z-index: $z-layer-10;
-    max-width: $width-desktop;
+    max-width: $screen-large;
     margin: 25rem auto 0;
     padding: 0 2rem;
 }
@@ -71,5 +72,11 @@ card-list {
         &:hover {
             background: saturate(darken($color-blue, 20%), 10%);
         }
+    }
+}
+
+@include SmallScreen {
+    body {
+        color: red
     }
 }
