@@ -1,15 +1,48 @@
 @import '../variables';
-
-right-drawer{
-  display: block;
-  position: fixed;
-  right: 0px;
-  top:0px;
-  transform: translateZ(0);
-  height: 100vh;
-  width: 20vh;
-  min-width: 300px;
-  background-color: rgba(0,0,0,0.8);
-  color:$color-white;
-  z-index: $z-layer-50;
+right-drawer {
+    .contents {
+        padding: 24px;
+    }
+    .rightdrawer {
+        display: block;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        transform: translateZ(0);
+        min-width: 0px;
+        width: 0px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: $color-white;
+        z-index: $z-layer-50;
+        font-size: 16px;
+        color:$color-lightgrey;
+        line-height: 1.6;
+        overflow: scroll;
+        &.opened {
+            width: 30vw;
+            min-width: 300px;
+        }
+        .pic-cover {
+            border-radius: 3px;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+    .name{
+      color:#fff;
+    }
+    .link{
+      font-weight: 300;
+      
+      &:hover{
+        border-bottom: 1px solid $color-lightgrey;
+      }
+    }
+    .tags{
+      font-weight: 300;
+      font-size: 14px;
+      font-style: italic;
+    }
+    
 }

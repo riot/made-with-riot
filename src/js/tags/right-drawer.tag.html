@@ -1,5 +1,51 @@
 <right-drawer>
-  <div class="rightdrawer">
-
+  <div class="rightdrawer {state}">
+    <div class="contents">
+      <div class="cover">
+        <img class="pic-cover" src="{imgUrl}" alt="{imgAlt}">
+      </div>
+      <article class="details">
+        <div class="name">{name}</div>
+        <a href="{link}" class="link">{link}</a>
+        <p class="text">
+          {desc}
+        </p>
+        <div class="tags">
+          <span class="tag" each="{tag in tags}">#{tag.trim()} </span>
+        </div>
+      </acticle>
+    </div>
   </div>
+  <script>
+    var _self=this;
+    _self.state="closed";
+    _self.tags=[1,2,3];
+    this.on("mount",function(){
+      this.root.closeDrawer=function(){
+        _self.update({
+          state:"closed"
+        });
+      }
+      this.root.openDrawer=function(projectid){
+        var project=null;
+        for(var projectIndex=0;projectIndex<projectData.length;projectIndex++){
+          if(projectData[projectIndex].id===projectid){
+            project=projectData[projectIndex];
+            break;
+          }
+        } 
+        if(project){
+          _self.update({
+            name:project.name,
+            link:project.url,
+            imgUrl:project.imgUrl,
+            imgAlt:project.imgAlt,
+            desc:project.desc,
+            tags:project.tags.split(","),
+            state:"opened"
+          });
+        }
+      }
+    })
+  </script>
 </right-drawer>
