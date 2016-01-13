@@ -4,11 +4,17 @@
 
         <div class="container">
 
+            <div class="top-bar__mobile-menu">
+                <svg class="svg-icon" role="img" title="Preview Mode" width="22">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/all.min.svg#icon-menu"></use>
+                </svg>
+            </div>
+
             <div class="top-bar__search-bar">
                 <svg class="svg-icon" role="img" title="Preview Mode" width="22">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/all.min.svg#icon-search"></use>
                 </svg>
-                <input type="text" name="inputSearch" placeholder="Search">
+                <input type="text" name="inputSearch" placeholder="Search" onkeyup="{ filterCards }">
             </div>
 
             <div class="top-bar__landing">
@@ -34,7 +40,7 @@
                 <svg class="svg-icon" role="img" title="Preview Mode" width="22">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/all.min.svg#icon-search"></use>
                 </svg>
-                <input type="text" name="inputSearch" placeholder="Search">
+                <input type="text" name="inputSearchCompact" placeholder="Search" onkeyup="{ filterCards }">
             </div>
 
             <div class="top-bar__landing">
@@ -53,6 +59,7 @@
     <script>
         var self = this;
         var visibleClass = 'state--visible';
+        var styleElement = document.createElement('STYLE');
 
         self.on('mount', function() {
             document.addEventListener('scroll', function() {
@@ -97,6 +104,29 @@
             if(self.compactTopBar.classList.contains(visibleClass)) {
                 self.compactTopBar.classList.remove(visibleClass);
             }
+        }
+
+        filterCards(e) {
+
+            var value = e.target.value;
+
+            if(e.target.name == 'inputSearch') {
+                self.inputSearchCompact.value = value;
+            }else {
+                self.inputSearch.value = value;
+            }
+
+            if(value == ""){
+                styleElement.innerHTML = '';
+                document.body.appendChild(styleElement);
+            }else{
+                styleElement.innerHTML =
+                    opts.cardSelector + ' .card-list > :not([data-filter *= "' + value.toLowerCase() + '"]){ display: none; };' +
+                    opts.cardSelector + ' .card-list{ animation: fade-in-up 0.3s ease-in-out forwards; };';
+                document.body.appendChild(styleElement);
+            }
+
+            return true;
         }
     </script>
 
