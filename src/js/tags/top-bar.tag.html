@@ -52,12 +52,12 @@
 
     <script>
         var self = this;
+        var visibleClass = 'state--visible';
 
         self.on('mount', function() {
             document.addEventListener('scroll', function() {
 
                 if(window.pageYOffset < window.innerHeight) {
-                    self.hideCompactMenu();
 
                     var scaleRatio = 1 - Math.floor(pageYOffset) * 0.0003;
                     var opacityRatio = 1 - Math.floor(pageYOffset) * 0.008;
@@ -72,17 +72,27 @@
 
                 if(window.pageYOffset > window.innerHeight / 5) {
                     self.showCompactMenu();
+                    self.hideMainTopBar();
+                }
+
+                if(window.pageYOffset <= window.innerHeight / 5) {
+                    self.hideCompactMenu();
                 }
 
             });
         });
 
         showCompactMenu() {
-            self.compactTopBar.classList.add('state--visible');
+            console.log()
+            if(!self.compactTopBar.classList.contains(visibleClass)) {
+                self.compactTopBar.classList.add(visibleClass);
+            }
         }
 
         hideCompactMenu() {
-            self.compactTopBar.classList.remove('state--visible');
+            if(self.compactTopBar.classList.contains(visibleClass)) {
+                self.compactTopBar.classList.remove(visibleClass);
+            }
         }
     </script>
 
