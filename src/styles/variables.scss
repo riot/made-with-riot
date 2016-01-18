@@ -34,6 +34,7 @@ $z-layer-30:        30;
 $z-layer-40:        40;
 $z-layer-50:        50;
 
+
 // Screen sizes
 // --------------------------------------------------
 
@@ -41,3 +42,15 @@ $screen-small:      768px;
 $screen-medium:     992px;
 $screen-large:      1350px;
 $screen-xlarge:     1700px;
+
+
+// Animation motion types
+// --------------------------------------------------
+
+$motion-slow-end:   cubic-bezier(.12,.49,.32,.98);
+$motion-slow-start: cubic-bezier(.7,.01,1,.71);
+
+// Other variables
+// --------------------------------------------------
+
+$menu-offset-size: 250px;

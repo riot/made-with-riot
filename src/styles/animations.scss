@@ -1,0 +1,85 @@
+@import 'helpers';
+@import 'variables';
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.animate-slide-left {
+    animation-name: slide-left;
+    animation-duration: 0.5s;
+    animation-timing-function: $motion-slow-end;
+}
+
+.animate-slide-right {
+    animation-name: slide-right;
+    animation-duration: 0.5s;
+    animation-timing-function: $motion-slow-end;
+}
+
+.animate-fade-in-up {
+    animation-name: fade-in-up;
+    animation-duration: 0.5s;
+    animation-timing-function: $motion-slow-end;
+}
+
+.animate-fade-out-z {
+    animation-name: fade-out-z;
+    animation-duration: 0.1s;
+}
+
+.animate-fade-out {
+    animation-name: fade-out;
+    animation-duration: 0.3s;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translate3d($menu-offset-size, 0, 0);
+    }
+    100% {
+        transform: translate3d(0%, 0, 0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d($menu-offset-size, 0, 0);
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        transform: translate3d(0, 50px, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-z {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d(0, 0, 0) scale(0.95);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

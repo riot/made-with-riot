@@ -129,8 +129,12 @@ top-bar {
     }
 }
 
-.top-bar__mobile-menu {
+.top-bar__mobile-trigger {
     display:none;
+}
+
+.top-bar__mobile-menu {
+    display: none;
 }
 
 @include SmallScreen {
@@ -142,22 +146,58 @@ top-bar {
         display: none !important;
     }
 
-    .top-bar__mobile-menu {
+    .top-bar__mobile-trigger {
         position:absolute;
         display: block;
         margin-top: 4.2rem;
 
         .svg-icon {
+            position: absolute;
             fill: $color-lightgrey;
             height: 20px;
+            transform: rotate(45deg);
+            opacity:0;
+
+            transition: all 0.4s ease-in-out;
+
+            &.active {
+                transform: rotate(0deg);
+                opacity:1;
+            }
         }
     }
 
     .top-bar.state--compact {
         padding: 1.1rem 2rem;
-        
-        .top-bar__mobile-menu {
+
+        .top-bar__mobile-trigger {
             margin-top: 0.8rem;
+        }
+    }
+
+    .top-bar__mobile-menu {
+        opacity:0;
+        z-index: $z-floor;
+        display: block;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: $menu-offset-size;
+        padding: 0 0 0 2rem;
+
+        .top-bar__search-bar {
+            display: block !important;
+        }
+
+        .top-bar__link {
+            display: block;
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            padding: 0;
+
+            &:hover {
+                box-shadow: none;
+            }
         }
     }
 }

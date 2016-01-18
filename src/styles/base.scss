@@ -15,6 +15,12 @@ body {
     background: $color-white;
 }
 
+main {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 *,
 *:before,
 *:after {

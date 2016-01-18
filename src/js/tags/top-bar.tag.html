@@ -1,12 +1,27 @@
 <top-bar>
 
+    <div class="top-bar__mobile-menu" name="mobileMenu">
+        <div class="top-bar__search-bar">
+            <svg class="svg-icon" role="img" title="Preview Mode" width="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/all.min.svg#icon-search"></use>
+            </svg>
+            <input type="text" name="inputSearch" placeholder="Search" onkeyup="{ filterCards }">
+        </div>
+        <a href="#" each="{ opts.menu }" class="top-bar__link { state--attention: isImportant }">
+            { text }
+        </a>
+    </div>
+
     <header class="top-bar" name="mainTopBar">
 
         <div class="container">
 
-            <div class="top-bar__mobile-menu">
-                <svg class="svg-icon" role="img" title="Preview Mode" width="22">
+            <div class="top-bar__mobile-trigger" onclick="{ toggleMobileMenu }">
+                <svg class="svg-icon icon-menu" role="img" title="Preview Mode" width="22">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/all.min.svg#icon-menu"></use>
+                </svg>
+                <svg class="svg-icon icon-close" role="img" title="Preview Mode" width="18">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/all.min.svg#icon-close"></use>
                 </svg>
             </div>
 
@@ -36,9 +51,12 @@
 
         <div class="container">
 
-            <div class="top-bar__mobile-menu">
-                <svg class="svg-icon" role="img" title="Preview Mode" width="22">
+            <div class="top-bar__mobile-trigger" onclick="{ toggleMobileMenu }">
+                <svg class="svg-icon icon-menu" role="img" title="Preview Mode" width="22">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/all.min.svg#icon-menu"></use>
+                </svg>
+                <svg class="svg-icon icon-close" role="img" title="Preview Mode" width="18">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/all.min.svg#icon-close"></use>
                 </svg>
             </div>
 
@@ -68,8 +86,20 @@
         var styleElement = document.createElement('STYLE');
 
         self.on('mount', function() {
+            // Menu open flag starts closed by default
+            self.isMenuOpen = false;
+
+            // Get cards based on opts.cardSelector
+            self.cards = document.querySelector(opts.cardSelector);
+
+            // Start component with menu icon visible
+            self.mainTopBar.querySelector('.top-bar__mobile-trigger .icon-menu').classList.add('active');
+            self.compactTopBar.querySelector('.top-bar__mobile-trigger .icon-menu').classList.add('active');
+
+            // Scroll listener for showing topbar
             document.addEventListener('scroll', function() {
 
+                // If scroll position smaller than window height
                 if(window.pageYOffset < window.innerHeight) {
 
                     var scaleRatio = 1 - Math.floor(pageYOffset) * 0.0003;
@@ -83,11 +113,13 @@
                     self.mainTopBar.style.opacity = opacityRatio;
                 }
 
+                // If page scrolled above 1/5th of window
                 if(window.pageYOffset > window.innerHeight / 5) {
                     self.showCompactMenu();
                     self.hideMainTopBar();
                 }
 
+                // If scroll smaller than 1/5th window height
                 if(window.pageYOffset <= window.innerHeight / 5) {
                     self.hideCompactMenu();
                 }
@@ -113,7 +145,6 @@
         }
 
         filterCards(e) {
-
             var value = e.target.value;
 
             if(e.target.name == 'inputSearch') {
@@ -133,6 +164,61 @@
             }
 
             return true;
+        }
+
+        toggleMobileMenu() {
+            if(self.isMenuOpen) {
+                self.isMenuOpen = !self.isMenuOpen;
+                self.closeMobileMenu();
+            }else {
+                self.isMenuOpen = !self.isMenuOpen;
+                self.openMobileMenu();
+            }
+        }
+
+        openMobileMenu() {
+            // Remove unwanted classes to enable animations
+            self.clearMobileMenuClasses();
+
+            // Add animation to MainTopBar menu icon
+            self.mainTopBar.querySelector('.top-bar__mobile-trigger .icon-menu').classList.remove('active');
+            self.mainTopBar.querySelector('.top-bar__mobile-trigger .icon-close').classList.add('active');
+
+            // Add animation to CompactTopBar menu icon
+            self.compactTopBar.querySelector('.top-bar__mobile-trigger .icon-menu').classList.remove('active');
+            self.compactTopBar.querySelector('.top-bar__mobile-trigger .icon-close').classList.add('active');
+
+            // Add animation classes to components
+            self.cards.classList.add('animate','animate-slide-right');
+            self.mainTopBar.classList.add('animate','animate-slide-right');
+            self.compactTopBar.childNodes[1].classList.add('animate','animate-slide-right');
+            self.mobileMenu.classList.add('animate', 'animate-fade-in-up');
+        }
+
+        closeMobileMenu() {
+            // Remove unwanted classes to enable animations
+            self.clearMobileMenuClasses();
+
+            // Add animation to MainTopBar menu icon
+            self.mainTopBar.querySelector('.top-bar__mobile-trigger .icon-menu').classList.add('active');
+            self.mainTopBar.querySelector('.top-bar__mobile-trigger .icon-close').classList.remove('active');
+
+            // Add animation to CompactTopBar menu icon
+            self.compactTopBar.querySelector('.top-bar__mobile-trigger .icon-menu').classList.add('active');
+            self.compactTopBar.querySelector('.top-bar__mobile-trigger .icon-close').classList.remove('active');
+
+            // Add animation classes to components
+            self.cards.classList.add('animate','animate-slide-left');
+            self.mainTopBar.classList.add('animate','animate-slide-left');
+            self.compactTopBar.childNodes[1].classList.add('animate','animate-slide-left');
+            self.mobileMenu.classList.add('animate', 'animate-fade-out-z');
+        }
+
+        clearMobileMenuClasses() {
+            self.cards.classList.remove('animate', 'animate-slide-left', 'animate-slide-right');
+            self.mainTopBar.classList.remove('animate','animate-slide-left', 'animate-slide-right');
+            self.compactTopBar.childNodes[1].classList.remove('animate','animate-slide-left', 'animate-slide-right');
+            self.mobileMenu.classList.remove('animate', 'animate-fade-out-z', 'animate-fade-in-up');
         }
     </script>
 
