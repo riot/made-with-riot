@@ -17,6 +17,7 @@ let gulp         =  require('gulp'),
     connect      =  require('gulp-connect'),
     svgstore     =  require('gulp-svgstore'),
     svgmin       =  require('gulp-svgmin'),
+    ghPages      =  require('gulp-gh-pages'),
     path         =  require('path'),
     del          =  require('del');
 
@@ -51,6 +52,7 @@ let opts = {
              riotCompiled: 'Riot Tags compiled.',
               allCompiled: 'Compiling finished.',
              dataCompiled: 'Data JSON compiled.',
+              appDeployed: 'App successful deployed.',
               shitHappens: 'Shit happens. Check log.'
     },
          basename: 'all',
@@ -202,6 +204,11 @@ gulp.task('lift', () => {
         root: opts.path.dist,
         port: 8000
     });
+});
+
+gulp.task('deploy', () => {
+    return gulp.src(opts.path.dist + '/**/*')
+        .pipe(ghPages());
 });
 
 
