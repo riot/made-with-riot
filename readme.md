@@ -6,7 +6,12 @@ Made With Riot is a public showcase for websites, webapps and components made us
 
 ## Adding a project to Made With Riot
 
-(WIP)
+1. Fork this repository;
+2. Add your image (748x600) on `/resources` folder under the pattern `project-its-name.jpg`. E.g. `project-nike-store.jpg`;
+3. Add project info on the bottom of `/src/data/project.json` file;
+4. Submit a pull-request.
+
+If you have any trouble doing it, check the paths to see how others did it.
 
 ## Working locally
 
