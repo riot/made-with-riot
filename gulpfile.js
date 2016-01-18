@@ -32,10 +32,12 @@ let opts = {
            styles: 'src/styles',
             views: 'src/views',
            images: 'src/img',
+             data: 'data',
 
              dist: 'dist',
            distJs: 'dist/js',
           distCss: 'dist/css',
+         distData: 'dist/data',
        distImages: 'dist/img',
   distJsGenerated: 'dist/js/generated',
     genComponents: 'dist/js/components/generated',
@@ -47,6 +49,7 @@ let opts = {
            imagesCompiled: 'Images compiled.',
              riotCompiled: 'Riot Tags compiled.',
               allCompiled: 'Compiling finished.',
+             dataCompiled: 'Data JSON compiled.',
               shitHappens: 'Shit happens. Check log.'
     },
          basename: 'all',
@@ -146,11 +149,20 @@ gulp.task('compile:riot', () => {
         .pipe(notify({message: opts.messages.riotCompiled}));
 });
 
+gulp.task('compile:data', () => {
+    return gulp.src(opts.path.data + '/*.json')
+        .pipe(gulp.dest(opts.path.distData))
+        .pipe(notify({message: opts.messages.dataCompiled}));
+});
+
+
+
 gulp.task('compile:scripts', (cb) => {
     runSequence(
         'clean:scripts',
         'compile:riot',
         'compile:js',
+        'compile:data',
         cb
     );
 });
