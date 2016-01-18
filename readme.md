@@ -1,6 +1,6 @@
 # Made With Riot
 
-![Responsive Made With Riot](readme-img.png)
+![Responsive Made With Riot](readme-img.jpg)
 
 Made With Riot is a public showcase for websites, webapps and components made using Riot.js library.
 
