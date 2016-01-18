@@ -83,7 +83,7 @@ gulp.task('compile:styles', ['clean:styles'], () => {
         .pipe(rename({basename: opts.basename, suffix: opts.minSuffix}))
 
         // Give you machine a break, enable this only for production
-        //.pipe(minifycss())
+        .pipe(minifycss())
 
         .pipe(gulp.dest(opts.path.distCss))
         .pipe(notify({message: opts.messages.stylesCompiled}));
@@ -131,7 +131,7 @@ gulp.task('compile:js', () => {
         .pipe(gulp.dest(opts.path.distJs))
 
         // Give you machine a break, enable this only for production
-        //.pipe(uglify())
+        .pipe(uglify())
 
         .pipe(rename({basename: opts.basename, suffix: opts.minSuffix}))
         .pipe(gulp.dest(opts.path.distJs))
