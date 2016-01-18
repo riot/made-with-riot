@@ -22,6 +22,6 @@ Then access the application on http://localhost:8000/
 
 For developing, simply run the command `gulp watch:all` for automatic re-compiling on file changes.
 
-The project is using Sass as CSS pre-processor and actually all tags styles are in separated files.
+For anyone interested, these are the technologies used for this project:
 
 (WIP)
