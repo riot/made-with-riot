@@ -28,6 +28,7 @@ let opts = {
     path: {
            assets: 'src',
    riotComponents: 'src/js/tags',
+        promiseJs:'node_modules/promise-polyfill/Promise.js',
                js: 'src/js',
            styles: 'src/styles',
             views: 'src/views',
@@ -117,6 +118,7 @@ gulp.task('compile:svg', () => {
 
 gulp.task('compile:js', () => {
     return gulp.src([
+            opts.path.promiseJs,
             opts.path.js + '/**/*.js',
             opts.path.distJsGenerated + '/**/*.js',
             opts.path.genComponents + '/*.js'

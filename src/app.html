@@ -5,10 +5,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#408bc2">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
     <link rel="icon" sizes="16x16" href="img/favicon_16.png">
     <link rel="icon" sizes="32x32" href="img/favicon_32.png">
     <meta charset="UTF-8">
@@ -20,60 +18,32 @@
     <top-bar></top-bar>
     <card-list id="card-list"></card-list>
     <right-drawer></right-drawer>
-
     <script src="js/all.min.js"></script>
     <script>
     var $rightDrawer = document.querySelector("right-drawer");
-    var projectData = [{
-        id: '134',
-        imgUrl: '../img/project-123.jpg',
-        imgAlt: 'My project blabla',
-        name: 'E-Commerce Festival',
-        url: 'http://abc.com/',
-        desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ',
-        tags:"riot, veronica, jQuery, flux, astrophysics, neuroscience, deadpool, ironman"
-    }, {
-        id: '135',
-        imgUrl: '../img/project-123.jpg',
-        imgAlt: 'My project blabla',
-        name: 'E-Commerce Festival',
-        url: 'http://abc.com/',
-        desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ',
-        tags:"riot, veronica, jQuery, flux, astrophysics, neuroscience, deadpool, ironman"
-    }, {
-        id: '136',
-        imgUrl: '../img/project-123.jpg',
-        imgAlt: 'My project blabla',
-        name: 'E-Commerce Festival',
-        url: 'http://abc.com/',
-        desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ',
-        tags:"riot, veronica, jQuery, flux, astrophysics, neuroscience, deadpool, ironman"
-    }, {
-        id: '137',
-        imgUrl: '../img/project-123.jpg',
-        imgAlt: 'My project blabla querty',
-        name: 'E-Commerce Festival',
-        url: 'http://abc.com/',
-        desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ',
-        tags:"riot, veronica, jQuery, flux, astrophysics, neuroscience, deadpool, ironman"
-    }, {
-        id: '138',
-        imgUrl: '../img/project-123.jpg',
-        imgAlt: 'My project blabla',
-        name: 'E-Commerce Festival',
-        url: 'http://abc.com/',
-        desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ',
-        tags:"riot, veronica, jQuery, flux, astrophysics, neuroscience, deadpool, ironman"
-    }, {
-        id: '139',
-        imgUrl: '../img/project-123.jpg',
-        imgAlt: 'My project blabla',
-        name: 'E-Commerce Festival',
-        url: 'http://abc.com/',
-        desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ',
-        tags:"riot, veronica, jQuery, flux, astrophysics, neuroscience, deadpool, ironman"
-    }];
+    var dataPromise=null;
+
+    function getProjectData() {
+        return dataPromise;
+    }
+
     window.onload = function() {
+        dataPromise = new Promise(function(resolve, reject) {
+            var req = new XMLHttpRequest()
+
+            req.onreadystatechange = function() {
+                if (req.readyState === 4 &&
+                    (req.status === 200 || !req.status && req.responseText.length)) {
+                    resolve(JSON.parse(req.responseText));
+                }
+                else if(req.readyState === 4 && req.status !== 200){
+                    reject("Ajax Failed");
+                }
+            }
+            req.open('GET', "/data/projects.json", true);
+            req.send('');
+        });
+
         riot.mount('top-bar', {
             cardSelector: '#card-list',
             logoUrl: 'img/logo_2x.png',
@@ -87,9 +57,7 @@
             }]
         });
 
-        riot.mount('card-list', {
-            projects: projectData
-        });
+        riot.mount('card-list', {});
 
         riot.mount("right-drawer", {});
         riot.route.exec()

@@ -1,7 +1,18 @@
 @import '../variables';
+@import '../helpers';
 right-drawer {
     .contents {
         padding: 24px;
+    }
+    .phantom{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.2);
+        z-index: $z-layer-40;
+        left:0px;
+        top:0px;
     }
     .rightdrawer {
         display: block;
@@ -9,19 +20,35 @@ right-drawer {
         right: 0px;
         top: 0px;
         transform: translateZ(0);
-        min-width: 0px;
-        width: 0px;
+        width: 30vw;
+        min-width: 300px;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.8);
         color: $color-white;
         z-index: $z-layer-50;
         font-size: 16px;
-        color:$color-lightgrey;
+        color: $color-lightgrey;
         line-height: 1.6;
         overflow: scroll;
+        transform: translateX(130vw) translateZ(0);
+        -webkit-transform: translateX(130vw) translateZ(0);
+        -moz-transform: translateX(130vw) translateZ(0);
+        -ms-transform: translateX(130vw) translateZ(0);
+        -o-transform: translateX(130vw) translateZ(0);
+
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -moz-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+        -o-transition-duration:400ms;
+
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -moz-transition-property: transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
         &.opened {
-            width: 30vw;
-            min-width: 300px;
+            transform: translateX(0vw) translateZ(0);
         }
         .pic-cover {
             border-radius: 3px;
@@ -29,20 +56,38 @@ right-drawer {
             margin-bottom: 16px;
         }
     }
-    .name{
-      color:#fff;
+    .name {
+        color: #fff;
     }
-    .link{
-      font-weight: 300;
-      
-      &:hover{
-        border-bottom: 1px solid $color-lightgrey;
-      }
+    .link {
+        font-weight: 300;
+        &:hover {
+            border-bottom: 1px solid $color-lightgrey;
+        }
     }
-    .tags{
-      font-weight: 300;
-      font-size: 14px;
-      font-style: italic;
+    .tags {
+        font-weight: 300;
+        font-size: 14px;
+        font-style: italic;
     }
-    
+    .sitelink{
+        text-align: center;
+    }
+    .button-primary{
+        display: inline-block;
+        border:0px;
+        margin: 16px;
+        padding: 8px;
+        min-width: 50%;
+    }
+}
+
+@include SmallScreen {
+    .rightdrawer {
+        &.opened{
+            background-color: rgba(0, 0, 0, 1);
+            width: 100%;
+
+        }
+    }
 }

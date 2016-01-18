@@ -40,6 +40,16 @@ input {
     padding: 0 20px;
 }
 
+.button-primary{
+    font-weight: 500;
+    font-size: 1.3rem;
+    background: $color-blue;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 0.4rem;
+    outline: 0px;
+}
+
 @include SmallScreen {
     .container {
         padding: 0;
