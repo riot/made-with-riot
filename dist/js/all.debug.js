@@ -2675,7 +2675,7 @@ riot.tag2('right-drawer', '<div class="phantom" if="{state===\'opened\'}" onclic
       }
 
       this.goHome=function(){
-        window.location.href="/#";
+        riot.route("/");
       }
 
       this.root.openDrawer=function(projectid){

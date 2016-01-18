@@ -33,7 +33,7 @@ let opts = {
            styles: 'src/styles',
             views: 'src/views',
            images: 'src/img',
-             data: 'data',
+             data: 'src/data',
 
              dist: 'dist',
            distJs: 'dist/js',
@@ -162,6 +162,7 @@ gulp.task('compile:data', () => {
 gulp.task('compile:scripts', (cb) => {
     runSequence(
         'clean:scripts',
+        'clean:data',
         'compile:riot',
         'compile:js',
         'compile:data',
@@ -190,6 +191,10 @@ gulp.task('clean:scripts', (cb) => {
 
 gulp.task('clean:html', (cb) => {
     return del(opts.path.dist + '/*.html', cb);
+});
+
+gulp.task('clean:data', (cb) => {
+    return del(opts.path.distData + '/*.json', cb);
 });
 
 gulp.task('lift', () => {
