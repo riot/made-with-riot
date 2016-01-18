@@ -24,4 +24,30 @@ For developing, simply run the command `gulp watch:all` for automatic re-compili
 
 For anyone interested, these are the technologies used for this project:
 
-(WIP)
+**JavaScript Libraries used:**
+
+- Riot;
+- Good ol' Vanilla JavaScript.
+
+
+**CSS Tools used:**
+
+- Sass
+
+
+**Task Runner:**
+
+- Gulp
+
+
+
+### Deploying on gh-pages
+
+To deploy on production simply run the following tasks on your local environment
+
+```bash
+gulp compile:all
+gulp deploy
+```
+
+Then follow the instructions on your terminal.
