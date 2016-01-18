@@ -1,6 +1,4 @@
-@import '../variables';
-@import '../helpers';
-
+@import '../base';
 card-list {
     display: block;
     position: relative;
@@ -8,6 +6,11 @@ card-list {
     max-width: $screen-large;
     margin: 25rem auto 0;
     padding: 0 2rem;
+    loader{
+        left: 0px;
+        right:0px;
+        margin: auto;
+    }
 }
 
 .card-list {
@@ -57,16 +60,11 @@ card-list {
     }
 
     .card-list__details {
+        @extend .button-primary;
         position: absolute;
         bottom: 0;
         right: 0;
         margin-bottom: 0.5rem;
-        font-weight: 500;
-        font-size: 1.3rem;
-        background: $color-blue;
-        color: #fff;
-        padding: 8px 20px;
-        border-radius: 0.4rem;
 
         transition: background 0.2s linear;
 
