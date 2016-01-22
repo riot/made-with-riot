@@ -1,3 +1,13 @@
 {
-    "projects":[]
+    "projects": [
+        {
+            "id": "1000",
+            "imgUrl": "img/project-cheeky-fingers.jpg",
+            "imgAlt": "Cheeky Fingers",
+            "name": "Cheeky Fingers",
+            "url": "http://cheekyfingers.com/",
+            "desc": "Cheeky Fingers is a beautifully crafted piano chord dictionary for iPhone & iPad. \n\n We've designed a beautiful sidekick for any beginner or advanced pianist. No fuss, no confusing menus or terminology - just the chords, in a handy little app. \n\n Choose a key to see chord variations, related chords and great sounding progressions in that key. Find chord inspiration for your next song.",
+            "tags": "Riot, APP, iOS, Cordova, PhoneGap, webapp"
+        }
+    ]
 }
