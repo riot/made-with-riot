@@ -256,10 +256,28 @@ card-list {
   margin-bottom: 5%;
   position: relative; }
   .card-list__card .card-list__image {
+    display: block;
     position: relative;
     border-radius: 0.4rem;
     box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.08); }
+    .card-list__card .card-list__image:hover::after {
+      opacity: 1; }
+    .card-list__card .card-list__image::after {
+      pointer-events: none;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 0.4rem;
+      position: absolute;
+      z-index: 20;
+      background: rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      -webkit-transition: opacity 0.25s linear;
+      transition: opacity 0.25s linear; }
     .card-list__card .card-list__image::before {
+      pointer-events: none;
       content: '';
       width: 100%;
       height: 100%;
@@ -398,49 +416,46 @@ right-drawer .phantom {
   width: 100%;
   height: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 40;
   left: 0px;
-  top: 0px; }
+  top: 0px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear; }
+  right-drawer .phantom.opened {
+    opacity: 1;
+    pointer-events: auto; }
 
 right-drawer .rightdrawer {
   display: block;
   position: fixed;
-  right: 0px;
+  right: -400px;
   top: 0px;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  width: 30vw;
-  min-width: 300px;
+  width: 400px;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #f7f7f7;
+  background-color: rgba(41, 41, 41, 0.95);
   z-index: 50;
   font-size: 16px;
   color: #a8a8a8;
   line-height: 1.6;
   overflow: scroll;
-  transform: translateX(130vw) translateZ(0);
-  -webkit-transform: translateX(130vw) translateZ(0);
-  -moz-transform: translateX(130vw) translateZ(0);
-  -ms-transform: translateX(130vw) translateZ(0);
-  -o-transform: translateX(130vw) translateZ(0);
-  transition-duration: 400ms;
-  -webkit-transition-duration: 400ms;
-  -moz-transition-duration: 400ms;
-  -ms-transition-duration: 400ms;
-  -o-transition-duration: 400ms;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-property: transform;
-  -moz-transition-property: transform;
-  -ms-transition-property: transform;
-  -o-transition-property: transform; }
+  -webkit-transition-timing-function: cubic-bezier(0.12, 0.49, 0.32, 0.98);
+          transition-timing-function: cubic-bezier(0.12, 0.49, 0.32, 0.98); }
   right-drawer .rightdrawer.opened {
-    -webkit-transform: translateX(0vw) translateZ(0);
-            transform: translateX(0vw) translateZ(0); }
+    -webkit-transform: translate3d(-400px, 0, 0);
+            transform: translate3d(-400px, 0, 0); }
   right-drawer .rightdrawer .pic-cover {
     border-radius: 3px;
     width: 100%;
