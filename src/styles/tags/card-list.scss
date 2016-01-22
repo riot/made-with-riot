@@ -25,11 +25,36 @@ card-list {
     position: relative;
 
     .card-list__image {
+        display: block;
         position:relative;
         border-radius: 0.4rem;
         box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.08);
 
+        &:hover {
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            pointer-events: none;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 0.4rem;
+            position: absolute;
+            z-index: $z-layer-20;
+            background: rgba(0,0,0,0.2);
+            opacity: 0;
+
+            transition: opacity 0.25s linear;
+        }
+
         &::before {
+            pointer-events: none;
             content: '';
             width: 100%;
             height: 100%;

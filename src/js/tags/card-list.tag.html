@@ -2,9 +2,9 @@
     <div class="card-list">
         <loader if="{ !isDataLoaded }"></loader>
         <div if="{ isDataLoaded }" class="card-list__card" each="{ projects }" data-filter="{ name.toLowerCase() } { url.toLowerCase() } { tags.toLowerCase() }">
-            <div class="card-list__image">
+            <a href="{ url }" class="card-list__image">
                 <img src="{ imgUrl }" alt="{ imgAlt }" />
-            </div>
+            </a>
             <h2 class="card-list__name">
                 { name }
             </h2>
