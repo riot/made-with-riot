@@ -1,5 +1,5 @@
 <right-drawer>
-  <div class="phantom" if="{state==='opened'}" onclick="{goHome}"></div>
+  <div class="phantom {state}" onclick="{goHome}"></div>
   <div class="rightdrawer {state}">
     <loader if="{!isDataLoaded}"></loader>
     <div if="{isDataLoaded}" class="contents">
@@ -19,7 +19,7 @@
       <div class="sitelink">
         <a href="{link}" class="button-primary">Go To Website</a>
       </div>
-      
+
     </div>
   </div>
   <script>
@@ -50,7 +50,7 @@
                 project=projectData[projectIndex];
                 break;
               }
-            } 
+            }
             if(project){
               _self.update({
                 name:project.name,
