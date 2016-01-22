@@ -1,7 +1,7 @@
 <card-list>
     <div class="card-list">
-        <loader if="{!isDataLoaded}"></loader>
-        <div if="{isDataLoaded}" class="card-list__card" each="{projects}" data-filter="{ name.toLowerCase() } { imgAlt.toLowerCase() } { url.topLowerCase() }">
+        <loader if="{ !isDataLoaded }"></loader>
+        <div if="{ isDataLoaded }" class="card-list__card" each="{ projects }" data-filter="{ name.toLowerCase() } { url.toLowerCase() } { tags.toLowerCase() }">
             <div class="card-list__image">
                 <img src="{ imgUrl }" alt="{ imgAlt }" />
             </div>
