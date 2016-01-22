@@ -7,7 +7,7 @@
             </svg>
             <input type="text" name="inputSearch" placeholder="Search" onkeyup="{ filterCards }">
         </div>
-        <a href="#" each="{ opts.menu }" class="top-bar__link { state--attention: isImportant }">
+        <a each="{ opts.menu }" href="{ url }" class="top-bar__link { state--attention: isImportant }">
             { text }
         </a>
     </div>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="top-bar__right-menu">
-                <a href="#" each="{ opts.menu }" class="top-bar__link { state--attention: isImportant }">
+                <a each="{ opts.menu }" href="{ url }" class="top-bar__link { state--attention: isImportant }">
                     { text }
                 </a>
             </div>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="top-bar__right-menu">
-                <a href="#" each="{ opts.menu }" class="top-bar__link { state--attention: isImportant }">
+                <a each="{ opts.menu }" href="{ url }" class="top-bar__link { state--attention: isImportant }">
                     { text }
                 </a>
             </div>
