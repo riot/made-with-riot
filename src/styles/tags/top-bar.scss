@@ -51,12 +51,9 @@ top-bar {
 
 .top-bar__search-bar {
     flex: 1;
-    //display: flex;
-    //align-items: center;
-    //justify-content: flex-start !important;
-
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
 
     .svg-icon {
         width: 1.5rem;
@@ -87,11 +84,14 @@ top-bar {
 
 .top-bar__landing {
     flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    
+    display: block;
     text-align: center;
-    flex-direction: column;
+
+    //flex-direction: column;
 
     img {
         margin-left: -3rem;
