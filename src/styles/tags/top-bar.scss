@@ -51,9 +51,12 @@ top-bar {
 
 .top-bar__search-bar {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start !important;
+    //display: flex;
+    //align-items: center;
+    //justify-content: flex-start !important;
+
+    display: block;
+    text-align: center;
 
     .svg-icon {
         width: 1.5rem;
