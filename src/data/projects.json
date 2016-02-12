@@ -1,6 +1,15 @@
 {
     "projects": [
         {
+            "id": "0",
+            "imgUrl": "img/project-riotgear.jpg",
+            "imgAlt": "RiotGear",
+            "name": "RiotGear",
+            "url": "http://riotgear.js.org/",
+            "desc": "The open source component library for RiotJS.",
+            "tags": "Riot, Components, RiotGear"
+        },
+        {
             "id": "1000",
             "imgUrl": "img/project-cheeky-fingers.jpg",
             "imgAlt": "Cheeky Fingers",
