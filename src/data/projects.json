@@ -2,7 +2,7 @@
     "projects": [
         {
             "id": "0",
-            "imgUrl": "img/project-riotgear.jpg",
+            "imgUrl": "img/project-riotgear.png",
             "imgAlt": "RiotGear",
             "name": "RiotGear",
             "url": "http://riotgear.js.org/",
