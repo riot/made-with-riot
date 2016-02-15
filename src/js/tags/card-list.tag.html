@@ -2,13 +2,13 @@
     <div class="card-list">
         <loader if="{ !isDataLoaded }"></loader>
         <div if="{ isDataLoaded }" class="card-list__card" each="{ projects }" data-filter="{ name.toLowerCase() } { url.toLowerCase() } { tags.toLowerCase() }">
-            <a href="{ url }" class="card-list__image">
+            <a href="{ url }" target="_blank" rel="nofollow" class="card-list__image">
                 <img src="{ imgUrl }" alt="{ imgAlt }" />
             </a>
             <h2 class="card-list__name">
                 { name }
             </h2>
-            <div if={ url } class="card-list__url" target="_blank" rel="nofollow">
+            <div if={ url } target="_blank" rel="nofollow" class="card-list__url">
                 { url.replace(/(http|https)\:\/\/(www\.)?/, '') }
             </div>
             <a if={ url } href="#/details/{ id }" class="card-list__details">
