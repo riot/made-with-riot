@@ -2663,7 +2663,7 @@ riot.tag2('loader', '<svg class="spinner" width="65px" height="65px" viewbox="0 
 
 //-----
 
-riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div> <div class="rightdrawer {state}"> <loader if="{!isDataLoaded}"></loader> <div if="{isDataLoaded}" class="contents"> <div class="cover"> <img class="pic-cover" riot-src="{imgUrl}" alt="{imgAlt}"> </div> <article class="details"> <div class="name">{name}</div> <a href="{link}" class="link">{link}</a> <p class="text"> {desc} </p> <div class="tags"> <span class="tag" each="{tag in tags}">#{tag.trim()} </span> </div> </acticle> <div class="sitelink"> <a href="{link}" class="button-primary">Go To Website</a> </div> </div> </div>', '', '', function(opts) {
+riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div> <div class="rightdrawer {state}"> <loader if="{!isDataLoaded}"></loader> <div if="{isDataLoaded}" class="contents"> <div class="cover"> <img class="pic-cover" riot-src="{imgUrl}" alt="{imgAlt}"> </div> <article class="details"> <div class="name">{name}</div> <a href="{link}" class="link">{link}</a> <p class="text"> {desc} </p> <div class="tags"> <span class="tag" each="{tag in tags}">#{tag.trim()} </span> </div> </acticle> <div if="{link}" class="sitelink"> <a href="{link}" target="_blank" rel="nofollow" class="button-primary">Go To Website</a> </div> </div> </div>', '', '', function(opts) {
     var _self=this;
     _self.isDataLoaded=false;
     _self.state="closed";
