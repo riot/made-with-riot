@@ -22,8 +22,8 @@
         {
             "id": "2",
             "imgUrl": "img/casinotheater.jpg",
-            "imgAlt": "Casino Theater Winterthur",
-            "name": "Casino Theater Winterthur",
+            "imgAlt": "Casinotheater Winterthur",
+            "name": "Casinotheater Winterthur",
             "url": "https://www.casinotheater.ch/theater/spielplan",
             "desc": "Online calendar app to show the available Theater events loaded progressively via ajax",
             "tags": "Riot, Calendar, animations, responsive, ajax, html5history"
