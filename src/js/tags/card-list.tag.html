@@ -8,10 +8,10 @@
             <h2 class="card-list__name">
                 { name }
             </h2>
-            <div class="card-list__url">
-                { url }
+            <div if={ url } class="card-list__url">
+                { url.replace(/(http|https)\:\/\/(www\.)?/, '') }
             </div>
-            <a href="#/details/{ id }" class="card-list__details">
+            <a if={ url } href="#/details/{ id }" class="card-list__details">
                 View Details
             </a>
         </div>
