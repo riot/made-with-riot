@@ -16,8 +16,8 @@
           <span class="tag" each="{tag in tags}">#{tag.trim()} </span>
         </div>
       </acticle>
-      <div class="sitelink">
-        <a href="{link}" class="button-primary">Go To Website</a>
+      <div if="{ link }" class="sitelink">
+        <a href="{link}" target="_blank" rel="nofollow" class="button-primary">Go To Website</a>
       </div>
 
     </div>
