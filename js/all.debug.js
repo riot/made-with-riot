@@ -196,6 +196,23 @@
 
 //-----
 
+var GoogleAnalytics = (function(){
+
+    function GoogleAnalytics() {
+        this.UA = 'UA-000001';
+    }
+
+    GoogleAnalytics.prototype.message = function(text) {
+        return this.UA;
+    }
+
+    return GoogleAnalytics;
+
+})();
+
+
+//-----
+
 /* Riot v2.3.13, @license MIT, (c) 2015 Muut Inc. + contributors */
 
 ;(function(window, undefined) {
@@ -2620,23 +2637,6 @@ riot.Tag = Tag
     window.riot = riot
 
 })(typeof window != 'undefined' ? window : void 0);
-
-
-//-----
-
-var GoogleAnalytics = (function(){
-
-    function GoogleAnalytics() {
-        this.UA = 'UA-000001';
-    }
-
-    GoogleAnalytics.prototype.message = function(text) {
-        return this.UA;
-    }
-
-    return GoogleAnalytics;
-
-})();
 
 
 //-----

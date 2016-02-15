@@ -261,7 +261,7 @@ card-list {
     display: block;
     position: relative;
     border-radius: 0.4rem;
-    box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.08); }
+    box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.1); }
     .card-list__card .card-list__image:hover::after {
       opacity: 1; }
     .card-list__card .card-list__image::after {
