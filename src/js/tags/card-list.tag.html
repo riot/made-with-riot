@@ -8,7 +8,7 @@
             <h2 class="card-list__name">
                 { name }
             </h2>
-            <div if={ url } class="card-list__url">
+            <div if={ url } class="card-list__url" target="_blank" rel="nofollow">
                 { url.replace(/(http|https)\:\/\/(www\.)?/, '') }
             </div>
             <a if={ url } href="#/details/{ id }" class="card-list__details">
