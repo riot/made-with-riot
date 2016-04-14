@@ -18,7 +18,6 @@
             "desc": "The open source component library for RiotJS.",
             "tags": "Riot, Components, RiotGear"
         },
-
         {
             "id": "2",
             "imgUrl": "img/casinotheater.jpg",
@@ -27,6 +26,15 @@
             "url": "https://www.casinotheater.ch/theater/spielplan",
             "desc": "Online calendar app to show the available Theater events loaded progressively via ajax",
             "tags": "Riot, Calendar, animations, responsive, ajax, html5history"
+        },
+        {
+            "id": "3",
+            "imgUrl": "img/roost.jpg",
+            "imgAlt": "Roost.com - Map Search",
+            "name": "Roost.com",
+            "url": "https://www.roost.com/app/",
+            "desc": "Find & Rent Storage and Parking space nearby!",
+            "tags": "Riot, animations, responsive, APP, iOS, Cordova, PhoneGap, webapp, goole maps"
         }
     ]
 }
