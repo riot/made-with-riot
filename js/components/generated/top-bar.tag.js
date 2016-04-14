@@ -126,4 +126,4 @@ riot.tag2('top-bar', '<div class="top-bar__mobile-menu" name="mobileMenu"> <div 
             self.compactTopBar.childNodes[1].classList.remove('animate','animate-slide-left', 'animate-slide-right');
             self.mobileMenu.classList.remove('animate', 'animate-fade-out-z', 'animate-fade-in-up');
         }.bind(this)
-}, '{ }');
+});

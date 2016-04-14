@@ -41,4 +41,4 @@ riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div
         });
       }
     })
-}, '{ }');
+});

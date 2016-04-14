@@ -10,4 +10,4 @@ riot.tag2('card-list', '<div class="card-list"> <loader if="{!isDataLoaded}"></l
                 });
             });
         });
-}, '{ }');
+});

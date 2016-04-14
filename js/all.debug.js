@@ -2653,7 +2653,7 @@ riot.tag2('card-list', '<div class="card-list"> <loader if="{!isDataLoaded}"></l
                 });
             });
         });
-}, '{ }');
+});
 
 
 //-----
@@ -2706,7 +2706,7 @@ riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div
         });
       }
     })
-}, '{ }');
+});
 
 
 //-----
@@ -2839,4 +2839,4 @@ riot.tag2('top-bar', '<div class="top-bar__mobile-menu" name="mobileMenu"> <div 
             self.compactTopBar.childNodes[1].classList.remove('animate','animate-slide-left', 'animate-slide-right');
             self.mobileMenu.classList.remove('animate', 'animate-fade-out-z', 'animate-fade-in-up');
         }.bind(this)
-}, '{ }');
+});
