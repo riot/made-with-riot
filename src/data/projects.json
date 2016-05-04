@@ -34,7 +34,16 @@
             "name": "Roost.com",
             "url": "https://www.roost.com/app/",
             "desc": "Find & Rent Storage and Parking space nearby!",
-            "tags": "Riot, animations, responsive, APP, iOS, Cordova, PhoneGap, webapp, goole maps"
+            "tags": "Riot, animations, responsive, APP, iOS, Cordova, PhoneGap, webapp, google maps"
+        },
+        {
+            "id": "4",
+            "imgUrl": "img/project-grokdo.jpg",
+            "imgAlt": "Grokdo.com - Work together and smash your goals for FREE",
+            "name": "Grokdo - Work together",
+            "url": "https://grokdo.com",
+            "desc": "Managing your activities should be sensible, easy and empowering. Grokdo is a web application that will help you and your team work together, complete tasks and smash your goals. Its FREE for small groups or single users.",
+            "tags": "Riot, Application, Teams, Goals, Tasks"
         }
     ]
 }
