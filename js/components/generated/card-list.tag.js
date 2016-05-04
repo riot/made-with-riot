@@ -6,7 +6,7 @@ riot.tag2('card-list', '<div class="card-list"> <loader if="{!isDataLoaded}"></l
             getProjectData().then(function(e) {
                 _self.update({
                     isDataLoaded:true,
-                    projects:e.projects
+                    projects: e.projects.reverse()
                 });
             });
         });
