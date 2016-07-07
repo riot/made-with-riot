@@ -53,6 +53,15 @@
             "url": "https://sociocaster.com",
             "desc": "Sociocaster is the easiest way to build your business by using social media.",
             "tags": "Riot, Application, Sociocaster, Social Media, Scheduler, Facebook, Twitter, LinkedIn, Wordpress"
+        },
+        {
+            "id": "6",
+            "imgUrl": "img/riot-cheatsheet.jpg",
+            "imgAlt": "Riot Cheatsheet - an inofficial helper",
+            "name": "Riot Cheatsheet",
+            "url": "https://github.com/MartinMuzatko/riot-cheatsheet",
+            "desc": "Ever needed a quick refresher on some riot mechanics? The Riot Cheatsheet serves as compact reference with examples for about every existing riot API and templating mechanism. As a bonus, you get the source code of a riot/webpack managed project.",
+            "tags": "Riot, Markdown, Webpack, Search, Docs"
         }
     ]
 }
