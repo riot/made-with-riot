@@ -299,6 +299,11 @@ card-list {
     font-weight: 500;
     margin: 1.5rem 0 0.5rem; }
   .card-list__card .card-list__url {
+    width: -webkit-calc(100% - 120px);
+    width: calc(100% - 120px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 1.5rem;
     color: #a8a8a8; }
   .card-list__card .card-list__details {
@@ -323,6 +328,7 @@ card-list {
       text-align: center;
       margin-top: 2rem; }
     .card-list__card .card-list__url {
+      width: 100%;
       text-align: center; }
     .card-list__card .card-list__details {
       display: block;
