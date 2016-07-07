@@ -80,6 +80,10 @@ card-list {
     }
 
     .card-list__url {
+        width: calc(100% - 120px);  // 100% - detail button witdth
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         font-size: 1.5rem;
         color: $color-lightgrey;
     }
@@ -116,6 +120,7 @@ card-list {
         }
 
         .card-list__url {
+            width: 100%;
             text-align: center;
         }
 
