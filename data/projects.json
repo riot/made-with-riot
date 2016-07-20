@@ -62,6 +62,24 @@
             "url": "http://martinmuzatko.github.io/riot-cheatsheet/",
             "desc": "Ever needed a quick refresher on some riot mechanics? The Riot Cheatsheet serves as compact reference with examples for about every existing riot API and templating mechanism. As a bonus, you get the source code of a riot/webpack managed project.",
             "tags": "Riot, Markdown, Webpack, Search, Docs"
+        },
+        {
+            "id": "7",
+            "imgUrl": "img/frame00.jpg",
+            "imgAlt": "FRAME00.COM",
+            "name": "FRAME00.COM",
+            "url": "http://frame00.com",
+            "desc": "An Expanding Japanese Art Platform - the frame of new experiences. We curate fine art collections by artists and photographers beyond the screen.",
+            "tags": "Riot, WordPress, Art"
+        },
+        {
+            "id": "8",
+            "imgUrl": "img/project-dogada-org.jpg",
+            "imgAlt": "dogada.org",
+            "name": "IndieWeb blog — dogada.org",
+            "url": "https://dogada.org",
+            "desc": "Personal blog of Dmytro Dogadailo powered by Coect, IndieWeb, webmentions and microformats. Source code based on https://github.com/dogada/coect-starter-kit/",
+            "tags": "Riot, Coect, IndieWeb, WebMention, MF2, Social Media"
         }
     ]
 }
