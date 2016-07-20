@@ -65,6 +65,15 @@
         },
         {
             "id": "7",
+            "imgUrl": "img/frame00.jpg",
+            "imgAlt": "FRAME00.COM",
+            "name": "FRAME00.COM",
+            "url": "http://frame00.com",
+            "desc": "An Expanding Japanese Art Platform - the frame of new experiences. We curate fine art collections by artists and photographers beyond the screen.",
+            "tags": "Riot, WordPress, Art"
+        },
+        {
+            "id": "8",
             "imgUrl": "img/project-dogada-org.jpg",
             "imgAlt": "dogada.org",
             "name": "IndieWeb blog — dogada.org",
