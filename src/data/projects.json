@@ -71,6 +71,15 @@
             "url": "http://frame00.com",
             "desc": "An Expanding Japanese Art Platform - the frame of new experiences. We curate fine art collections by artists and photographers beyond the screen.",
             "tags": "Riot, WordPress, Art"
+        },
+        {
+            "id": "8",
+            "imgUrl": "img/project-dogada-org.jpg",
+            "imgAlt": "dogada.org",
+            "name": "IndieWeb blog — dogada.org",
+            "url": "https://dogada.org",
+            "desc": "Personal blog of Dmytro Dogadailo powered by Coect, IndieWeb, webmentions and microformats. Source code based on https://github.com/dogada/coect-starter-kit/",
+            "tags": "Riot, Coect, IndieWeb, WebMention, MF2, Social Media"
         }
     ]
 }
