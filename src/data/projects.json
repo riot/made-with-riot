@@ -80,6 +80,15 @@
             "url": "https://dogada.org",
             "desc": "Personal blog of Dmytro Dogadailo powered by Coect, IndieWeb, webmentions and microformats. Source code based on https://github.com/dogada/coect-starter-kit/",
             "tags": "Riot, Coect, IndieWeb, WebMention, MF2, Social Media"
+        },
+        {
+            "id": "9",
+            "imgUrl": "img/project-search-result.jpg",
+            "imgAlt": "Article search page for Nikkei Online Edition",
+            "name": "Article search page for Nikkei Online Edition — www.nikkei.com",
+            "url": "http://www.nikkei.com/search/site/?searchKeyword=asia",
+            "desc": "Article search page for Nikkei Online Edition. It features coverage of economic and business information - including corporate news, domestic and global macroeconomic trends, and investment and management strategies. Available for Japanese content only.",
+            "tags": "Riot, news, search, market, company"
         }
     ]
 }
