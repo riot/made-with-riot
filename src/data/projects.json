@@ -106,7 +106,7 @@
             "name": "Elixir Jobs",
             "url": "https://elixir-jobs.org/?utm_source=github&utm_medium=made-with-riot&utm_campaign=links",
             "desc": "Elixir Jobs is the dedicated job bulletin for the Elixir programming language. It connects talented developers with the companies who hire them.",
-            "tags": "Riot, Elixir, Job Search, Offline, Service Worker"
+            "tags": "Riot, Elixir, Job Search, Offline, Service Worker, Material Design"
         }
     ]
 }
