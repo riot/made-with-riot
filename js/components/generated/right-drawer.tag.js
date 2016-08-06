@@ -1,4 +1,4 @@
-riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div> <div class="rightdrawer {state}"> <loader if="{!isDataLoaded}"></loader> <div if="{isDataLoaded}" class="contents"> <div class="cover"> <img class="pic-cover" riot-src="{imgUrl}" alt="{imgAlt}"> </div> <article class="details"> <div class="name">{name}</div> <a href="{link}" class="link">{link}</a> <p class="text"> {desc} </p> <div class="tags"> <span class="tag" each="{tag in tags}">#{tag.trim()} </span> </div> </acticle> <div if="{link}" class="sitelink"> <a href="{link}" target="_blank" rel="nofollow" class="button-primary">Go To Website</a> </div> </div> </div>', '', '', function(opts) {
+riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div> <div class="rightdrawer {state}"> <loader if="{!isDataLoaded}"></loader> <div if="{isDataLoaded}" class="contents"> <div class="cover"> <img class="pic-cover" riot-src="{imgUrl}" alt="{imgAlt}"> </div> <article class="details"> <div class="name">{name}</div> <a href="{link}" class="link">{link}</a> <cite if="{author}" class="author">Author: <a href="{author.url}">{author.name}</a></cite> <p class="text"> {desc} </p> <div class="tags"> <span class="tag" each="{tag in tags}">#{tag.trim()} </span> </div> </acticle> <div if="{link}" class="sitelink"> <a href="{link}" target="_blank" rel="nofollow" class="button-primary">Go To Website</a> </div> </div> </div>', '', '', function(opts) {
     var _self=this;
     _self.isDataLoaded=false;
     _self.state="closed";
@@ -35,7 +35,8 @@ riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div
                 imgAlt:project.imgAlt,
                 desc:project.desc,
                 tags:project.tags.split(","),
-                state:"opened"
+                state:"opened",
+                author: project.author || false
               });
             }
         });
