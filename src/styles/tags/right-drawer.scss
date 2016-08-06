@@ -83,6 +83,15 @@ right-drawer {
         font-weight: 300;
         font-size: 14px;
         font-style: italic;
+
+        .tag {
+            padding-right: 5px;
+            cursor: pointer;
+            
+            &:hover {
+                color: #fff;
+            }
+        }
     }
     .sitelink{
         text-align: center;
