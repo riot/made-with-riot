@@ -14,7 +14,7 @@
           {desc}
         </p>
         <div class="tags">
-          <span class="tag" each="{tag in tags}">#{tag.trim()} </span>
+          <span class="tag" each="{tag in tags}" onclick="{TopBarComponent.filterByTag}">#{tag.trim()} </span>
         </div>
       </acticle>
       <div if="{ link }" class="sitelink">

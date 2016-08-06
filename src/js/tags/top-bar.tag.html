@@ -144,13 +144,53 @@
             }
         }
 
+        filterByTag(event) {
+            var tagText = event.item.tag;
+            var filterObject = {
+                target: {
+                    value: tagText
+                }
+            };
+
+            // Update desktop and mobile input search
+            this.inputSearch.forEach(function(el) {
+                el.value = tagText;
+            });
+
+            // Update compact top-bar input search
+            this.inputSearchCompact.value = tagText;
+
+            // Finally, run filtering on cards
+            this.filterCards(filterObject);
+
+            riot.route('/');
+            window.location.hash = '';
+
+        }
+
         filterCards(e) {
             var value = e.target.value;
 
             if(e.target.name == 'inputSearch') {
-                self.inputSearchCompact.value = value;
+
+                console.log(e.target.parentNode.parentNode === this.mobileMenu);
+
+                if(e.target.parentNode.parentNode === this.mobileMenu) {
+                    // if the input is mobile, update the desktop
+                    this.inputSearch[1].value = value;
+                }else {
+                    // if the input is desktop, update the mobile
+                    this.inputSearch[0].value = value;
+                }
+
+                // Also update the input in compact top-bar
+                this.inputSearchCompact.value = value;
+
             }else {
-                self.inputSearch.value = value;
+                this.inputSearch.forEach(function(input) {
+                    console.log(input);
+                    input.value = value;
+                });
             }
 
             if(value == ""){
