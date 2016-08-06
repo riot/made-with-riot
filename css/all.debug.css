@@ -492,6 +492,11 @@ right-drawer .tags {
   font-weight: 300;
   font-size: 14px;
   font-style: italic; }
+  right-drawer .tags .tag {
+    padding-right: 5px;
+    cursor: pointer; }
+    right-drawer .tags .tag:hover {
+      color: #fff; }
 
 right-drawer .sitelink {
   text-align: center; }
