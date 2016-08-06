@@ -34,7 +34,11 @@
             "name": "Roost.com",
             "url": "https://www.roost.com/app/",
             "desc": "Find & Rent Storage and Parking space nearby!",
-            "tags": "Riot, animations, responsive, APP, iOS, Cordova, PhoneGap, webapp, google maps"
+            "tags": "Riot, animations, responsive, APP, iOS, Cordova, PhoneGap, webapp, google maps",
+            "author": {
+                "name": "Luke Edwards",
+                "url": "https://lukeed.com"
+            }
         },
         {
             "id": "4",
@@ -106,7 +110,11 @@
             "name": "Elixir Jobs",
             "url": "https://elixir-jobs.org/?utm_source=github&utm_medium=made-with-riot&utm_campaign=links",
             "desc": "Elixir Jobs is the dedicated job bulletin for the Elixir programming language. It connects talented developers with the companies who hire them.",
-            "tags": "Riot, Elixir, Job Search, Offline, Service Worker, Material Design"
+            "tags": "Riot, Elixir, Job Search, Offline, Service Worker, Material Design",
+            "author": {
+                "name": "Luke Edwards",
+                "url": "https://lukeed.com"
+            }
         }
     ]
 }
