@@ -9,6 +9,7 @@
       <article class="details">
         <div class="name">{name}</div>
         <a href="{link}" class="link">{link}</a>
+        <cite if="{author}" class="author">Author: <a href="{author.url}">{author.name}</a></cite>
         <p class="text">
           {desc}
         </p>
@@ -59,7 +60,8 @@
                 imgAlt:project.imgAlt,
                 desc:project.desc,
                 tags:project.tags.split(","),
-                state:"opened"
+                state:"opened",
+                author: project.author || false
               });
             }
         });

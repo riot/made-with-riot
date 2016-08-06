@@ -60,6 +60,19 @@ right-drawer {
     .name {
         color: #fff;
     }
+    .author {
+        display: block;
+        font-style: normal;
+        font-size: 12px;
+        margin-top: 10px;
+        border-top: 1px solid rgba(255,255,255,0.06);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        padding: 10px 0;
+
+        a {
+            font-weight: bold;
+        }
+    }
     .link {
         font-weight: 300;
         &:hover {
