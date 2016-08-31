@@ -115,6 +115,19 @@
                 "name": "Luke Edwards",
                 "url": "https://lukeed.com"
             }
+        },
+        {
+            "id": "12",
+            "imgUrl": "img/project-oneshotanalytics.png",
+            "imgAlt": "One Shot Analytics Platform",
+            "name": "One Shot Analytics Platform",
+            "url": "https://growwithosg.com/analytics/",
+            "desc": "A Youtube video analytics platform displaying the speed of Riot.JS for the data of popular gamer celeb One Shot Gurl.",
+            "tags": "Riot, data, search, speed, webapp, gaming, HTML5, LocalStorage",
+            "author": {
+                "name": "Andy Martha",
+                "url": "https://github.com/biolithic"
+            }
         }
     ]
 }
