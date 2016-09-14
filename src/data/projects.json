@@ -115,6 +115,19 @@
                 "name": "Luke Edwards",
                 "url": "https://lukeed.com"
             }
+        },
+        {
+            "id": "12",
+            "imgUrl": "img/buildy.jpg",
+            "imgAlt": "Buildy",
+            "name": "Buildy",
+            "url": "https://buildyapp.com",
+            "desc": "Buildy helps you create your mobile application and website. Choose from news, coupons, map and many other functionalities to create an app just for you",
+            "tags": "Riot, App builder, CMS",
+            "author": {
+                "name": "Claude Tech",
+                "url": "http://claudetech.com"
+            }
         }
     ]
 }
