@@ -128,6 +128,15 @@
                 "name": "Claude Tech",
                 "url": "http://claudetech.com"
             }
+        },
+        {
+            "id": "13",
+            "imgUrl": "img/project-excite.jpg",
+            "imgAlt": "Excite",
+            "name": "Excite",
+            "url": "http://www.excite.co.jp",
+            "desc": "Excite is a convenient and secure portal site that develops topical news, popular blogs, tanslations and dictionaries, friends search / wedding services, cheap providers etc. We also disseminate information on entertainment, music, cooking and child care widely.",
+            "tags": "Riot, Portal, Top"
         }
     ]
 }
