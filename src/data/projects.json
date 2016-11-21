@@ -137,6 +137,15 @@
             "url": "http://www.excite.co.jp",
             "desc": "Excite is a convenient and secure portal site that develops topical news, popular blogs, tanslations and dictionaries, friends search / wedding services, cheap providers etc. We also disseminate information on entertainment, music, cooking and child care widely.",
             "tags": "Riot, Portal, Top"
+        },
+        {
+            "id": "14",
+            "imgUrl": "img/project-honda-pilot-configurator.jpg",
+            "imgAlt": "Honda Pilot",
+            "name": "Honda Pilot",
+            "url": "http://automobiles.honda.com/pilot#build-price",
+            "desc": "Riot enabled us to build a top quality application on an extremely challenging project with a ton of moving parts. Riot's incredible flexibility allowed us to move fast under tight deadlines, and pivot on a dime for multiple stakeholders.",
+            "tags": "Riot, Automotive, Configurator, Build and Price"
         }
     ]
 }
