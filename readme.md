@@ -19,8 +19,8 @@ To run the project, follow the steps bellow after cloning the repository:
 
 ```bash
 npm install
-gulp compile:all
-gulp lift
+gulp compile:all #or npm run compile
+gulp lift #or npm run lift
 ```
 
 Then access the application on http://localhost:8000/
@@ -53,8 +53,8 @@ For anyone interested, these are the technologies used for this project:
 To deploy on production simply run the following tasks on your local environment
 
 ```bash
-gulp compile:all
-gulp deploy
+gulp compile:all #or npm run compile
+gulp deploy #or npm run deploy
 ```
 
 Then follow the instructions on your terminal.
