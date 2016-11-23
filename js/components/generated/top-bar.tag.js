@@ -56,13 +56,49 @@ riot.tag2('top-bar', '<div class="top-bar__mobile-menu" name="mobileMenu"> <div 
             }
         }.bind(this)
 
+        this.filterByTag = function(event) {
+            var tagText = event.item.tag;
+            var filterObject = {
+                target: {
+                    value: tagText
+                }
+            };
+
+            this.inputSearch.forEach(function(el) {
+                el.value = tagText;
+            });
+
+            this.inputSearchCompact.value = tagText;
+
+            this.filterCards(filterObject);
+
+            riot.route('/');
+            window.location.hash = '';
+
+        }.bind(this)
+
         this.filterCards = function(e) {
             var value = e.target.value;
 
             if(e.target.name == 'inputSearch') {
-                self.inputSearchCompact.value = value;
+
+                console.log(e.target.parentNode.parentNode === this.mobileMenu);
+
+                if(e.target.parentNode.parentNode === this.mobileMenu) {
+
+                    this.inputSearch[1].value = value;
+                }else {
+
+                    this.inputSearch[0].value = value;
+                }
+
+                this.inputSearchCompact.value = value;
+
             }else {
-                self.inputSearch.value = value;
+                this.inputSearch.forEach(function(input) {
+                    console.log(input);
+                    input.value = value;
+                });
             }
 
             if(value == ""){

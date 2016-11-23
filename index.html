@@ -46,7 +46,7 @@
             req.send('');
         });
 
-        riot.mount('top-bar', {
+        window.TopBarComponent = riot.mount('top-bar', {
             cardSelector: '#card-list',
             logoUrl: 'img/logo_2x.png',
             logoAlt: 'Made With Riot',
@@ -59,11 +59,11 @@
                 text: 'Submit a Project',
                 url: 'https://github.com/riot/made-with-riot#adding-a-project-to-made-with-riot'
             }]
-        });
+        })[0];
 
-        riot.mount('card-list', {});
+        window.CardListComponent = riot.mount('card-list', {})[0];
 
-        riot.mount("right-drawer", {});
+        window.RightDrawerComponent = riot.mount("right-drawer", {})[0];
         riot.route.exec()
     }
 

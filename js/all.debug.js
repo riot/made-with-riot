@@ -2663,7 +2663,7 @@ riot.tag2('loader', '<svg class="spinner" width="65px" height="65px" viewbox="0 
 
 //-----
 
-riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div> <div class="rightdrawer {state}"> <loader if="{!isDataLoaded}"></loader> <div if="{isDataLoaded}" class="contents"> <div class="cover"> <img class="pic-cover" riot-src="{imgUrl}" alt="{imgAlt}"> </div> <article class="details"> <div class="name">{name}</div> <a href="{link}" class="link">{link}</a> <p class="text"> {desc} </p> <div class="tags"> <span class="tag" each="{tag in tags}">#{tag.trim()} </span> </div> </acticle> <div if="{link}" class="sitelink"> <a href="{link}" target="_blank" rel="nofollow" class="button-primary">Go To Website</a> </div> </div> </div>', '', '', function(opts) {
+riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div> <div class="rightdrawer {state}"> <loader if="{!isDataLoaded}"></loader> <div if="{isDataLoaded}" class="contents"> <div class="cover"> <img class="pic-cover" riot-src="{imgUrl}" alt="{imgAlt}"> </div> <article class="details"> <div class="name">{name}</div> <a href="{link}" class="link">{link}</a> <cite if="{author}" class="author">Author: <a href="{author.url}">{author.name}</a></cite> <p class="text"> {desc} </p> <div class="tags"> <span class="tag" each="{tag in tags}" onclick="{TopBarComponent.filterByTag}">#{tag.trim()} </span> </div> </acticle> <div if="{link}" class="sitelink"> <a href="{link}" target="_blank" rel="nofollow" class="button-primary">Go To Website</a> </div> </div> </div>', '', '', function(opts) {
     var _self=this;
     _self.isDataLoaded=false;
     _self.state="closed";
@@ -2700,7 +2700,8 @@ riot.tag2('right-drawer', '<div class="phantom {state}" onclick="{goHome}"></div
                 imgAlt:project.imgAlt,
                 desc:project.desc,
                 tags:project.tags.split(","),
-                state:"opened"
+                state:"opened",
+                author: project.author || false
               });
             }
         });
@@ -2769,13 +2770,49 @@ riot.tag2('top-bar', '<div class="top-bar__mobile-menu" name="mobileMenu"> <div 
             }
         }.bind(this)
 
+        this.filterByTag = function(event) {
+            var tagText = event.item.tag;
+            var filterObject = {
+                target: {
+                    value: tagText
+                }
+            };
+
+            this.inputSearch.forEach(function(el) {
+                el.value = tagText;
+            });
+
+            this.inputSearchCompact.value = tagText;
+
+            this.filterCards(filterObject);
+
+            riot.route('/');
+            window.location.hash = '';
+
+        }.bind(this)
+
         this.filterCards = function(e) {
             var value = e.target.value;
 
             if(e.target.name == 'inputSearch') {
-                self.inputSearchCompact.value = value;
+
+                console.log(e.target.parentNode.parentNode === this.mobileMenu);
+
+                if(e.target.parentNode.parentNode === this.mobileMenu) {
+
+                    this.inputSearch[1].value = value;
+                }else {
+
+                    this.inputSearch[0].value = value;
+                }
+
+                this.inputSearchCompact.value = value;
+
             }else {
-                self.inputSearch.value = value;
+                this.inputSearch.forEach(function(input) {
+                    console.log(input);
+                    input.value = value;
+                });
             }
 
             if(value == ""){
