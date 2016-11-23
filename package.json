@@ -27,7 +27,10 @@
     "run-sequence": "^1.1.5"
   },
   "scripts": {
-    "test": ""
+    "test": "",
+    "compile": "gulp compile:all",
+    "lift": "gulp lift",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
