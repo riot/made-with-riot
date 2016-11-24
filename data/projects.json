@@ -1,151 +1,143 @@
 {
-    "projects": [
-        {
-            "id": "0",
-            "imgUrl": "img/project-cheeky-fingers.jpg",
-            "imgAlt": "Cheeky Fingers",
-            "name": "Cheeky Fingers",
-            "url": "http://cheekyfingers.com",
-            "desc": "Cheeky Fingers is a beautifully crafted piano chord dictionary for iPhone & iPad. \n\n We've designed a beautiful sidekick for any beginner or advanced pianist. No fuss, no confusing menus or terminology - just the chords, in a handy little app. \n\n Choose a key to see chord variations, related chords and great sounding progressions in that key. Find chord inspiration for your next song.",
-            "tags": "Riot, APP, iOS, Cordova, PhoneGap, webapp"
-        },
-        {
-            "id": "1",
-            "imgUrl": "img/project-riotgear.jpg",
-            "imgAlt": "RiotGear",
-            "name": "RiotGear",
-            "url": "http://riotgear.js.org",
-            "desc": "The open source component library for RiotJS.",
-            "tags": "Riot, Components, RiotGear"
-        },
-        {
-            "id": "2",
-            "imgUrl": "img/casinotheater.jpg",
-            "imgAlt": "Casinotheater Winterthur",
-            "name": "Casinotheater Winterthur",
-            "url": "https://www.casinotheater.ch/theater/spielplan",
-            "desc": "Online calendar app to show the available Theater events loaded progressively via ajax",
-            "tags": "Riot, Calendar, animations, responsive, ajax, html5history"
-        },
-        {
-            "id": "3",
-            "imgUrl": "img/roost.jpg",
-            "imgAlt": "Roost.com - Map Search",
-            "name": "Roost.com",
-            "url": "https://www.roost.com/app/",
-            "desc": "Find & Rent Storage and Parking space nearby!",
-            "tags": "Riot, animations, responsive, APP, iOS, Cordova, PhoneGap, webapp, google maps",
-            "author": {
-                "name": "Luke Edwards",
-                "url": "https://lukeed.com"
-            }
-        },
-        {
-            "id": "4",
-            "imgUrl": "img/project-grokdo.jpg",
-            "imgAlt": "Grokdo.com - Work together and smash your goals for FREE",
-            "name": "Grokdo - Work together",
-            "url": "https://grokdo.com",
-            "desc": "Managing your activities should be sensible, easy and empowering. Grokdo is a web application that will help you and your team work together, complete tasks and smash your goals. Its FREE for small groups or single users.",
-            "tags": "Riot, Application, Teams, Goals, Tasks"
-        },
-        {
-            "id": "5",
-            "imgUrl": "img/project-sociocaster.jpg",
-            "imgAlt": "Sociocaster - Powerful Social Media Management Software",
-            "name": "Sociocaster.com",
-            "url": "https://sociocaster.com",
-            "desc": "Sociocaster is the easiest way to build your business by using social media.",
-            "tags": "Riot, Application, Sociocaster, Social Media, Scheduler, Facebook, Twitter, LinkedIn, Wordpress"
-        },
-        {
-            "id": "6",
-            "imgUrl": "img/riot-cheatsheet.jpg",
-            "imgAlt": "Riot Cheatsheet - an inofficial helper",
-            "name": "Riot Cheatsheet",
-            "url": "http://martinmuzatko.github.io/riot-cheatsheet/",
-            "desc": "Ever needed a quick refresher on some riot mechanics? The Riot Cheatsheet serves as compact reference with examples for about every existing riot API and templating mechanism. As a bonus, you get the source code of a riot/webpack managed project.",
-            "tags": "Riot, Markdown, Webpack, Search, Docs"
-        },
-        {
-            "id": "7",
-            "imgUrl": "img/frame00.jpg",
-            "imgAlt": "FRAME00.COM",
-            "name": "FRAME00.COM",
-            "url": "http://frame00.com",
-            "desc": "An Expanding Japanese Art Platform - the frame of new experiences. We curate fine art collections by artists and photographers beyond the screen.",
-            "tags": "Riot, WordPress, Art"
-        },
-        {
-            "id": "8",
-            "imgUrl": "img/project-dogada-org.jpg",
-            "imgAlt": "dogada.org",
-            "name": "IndieWeb blog — dogada.org",
-            "url": "https://dogada.org",
-            "desc": "Personal blog of Dmytro Dogadailo powered by Coect, IndieWeb, webmentions and microformats. Source code based on https://github.com/dogada/coect-starter-kit/",
-            "tags": "Riot, Coect, IndieWeb, WebMention, MF2, Social Media"
-        },
-        {
-            "id": "9",
-            "imgUrl": "img/project-search-result.jpg",
-            "imgAlt": "Article search page for Nikkei Online Edition",
-            "name": "Article search page for Nikkei Online Edition — www.nikkei.com",
-            "url": "http://www.nikkei.com/search/site/?searchKeyword=asia",
-            "desc": "Article search page for Nikkei Online Edition. It features coverage of economic and business information - including corporate news, domestic and global macroeconomic trends, and investment and management strategies. Available for Japanese content only.",
-            "tags": "Riot, news, search, market, company"
-        },
-        {
-            "id": "10",
-            "imgUrl": "img/project-amestage.jpg",
-            "imgAlt": "amestage.com",
-            "name": "AMESTAGE - amestage.com",
-            "url": "https://amestage.com",
-            "desc": "AMESTAGE is a Live-Streaming Service which goes one step further than all others. This service enables the audience to actually “play” with the celebrities that stream through AMESTAGE with the new “Variety Corner System”. This feature allows celebrities to choose from over 50 themes and games we have prepared, and play quizzes or take surveys from the audience. *People who can stream are limited to people in production agencies. *It is a Japanese app with only Japanese content.",
-            "tags": "Riot, webapp, Live-Streaming, iOS, Android, Entertainment"
-        },
-        {
-            "id": "11",
-            "imgUrl": "img/elixir-jobs.jpg",
-            "imgAlt": "Elixir Jobs",
-            "name": "Elixir Jobs",
-            "url": "https://elixir-jobs.org/?utm_source=github&utm_medium=made-with-riot&utm_campaign=links",
-            "desc": "Elixir Jobs is the dedicated job bulletin for the Elixir programming language. It connects talented developers with the companies who hire them.",
-            "tags": "Riot, Elixir, Job Search, Offline, Service Worker, Material Design",
-            "author": {
-                "name": "Luke Edwards",
-                "url": "https://lukeed.com"
-            }
-        },
-        {
-            "id": "12",
-            "imgUrl": "img/buildy.jpg",
-            "imgAlt": "Buildy",
-            "name": "Buildy",
-            "url": "https://buildyapp.com",
-            "desc": "Buildy helps you create your mobile application and website. Choose from news, coupons, map and many other functionalities to create an app just for you",
-            "tags": "Riot, App builder, CMS",
-            "author": {
-                "name": "Claude Tech",
-                "url": "http://claudetech.com"
-            }
-        },
-        {
-            "id": "13",
-            "imgUrl": "img/project-excite.jpg",
-            "imgAlt": "Excite",
-            "name": "Excite",
-            "url": "http://www.excite.co.jp",
-            "desc": "Excite is a convenient and secure portal site that develops topical news, popular blogs, tanslations and dictionaries, friends search / wedding services, cheap providers etc. We also disseminate information on entertainment, music, cooking and child care widely.",
-            "tags": "Riot, Portal, Top"
-        },
-        {
-            "id": "14",
-            "imgUrl": "img/project-honda-pilot-configurator.jpg",
-            "imgAlt": "Honda Pilot",
-            "name": "Honda Pilot",
-            "url": "http://automobiles.honda.com/pilot#build-price",
-            "desc": "Riot enabled us to build a top quality application on an extremely challenging project with a ton of moving parts. Riot's incredible flexibility allowed us to move fast under tight deadlines, and pivot on a dime for multiple stakeholders.",
-            "tags": "Riot, Automotive, Configurator, Build and Price"
+    "projects": [{
+        "id": "0",
+        "imgUrl": "img/project-cheeky-fingers.jpg",
+        "imgAlt": "Cheeky Fingers",
+        "name": "Cheeky Fingers",
+        "url": "http://cheekyfingers.com",
+        "desc": "Cheeky Fingers is a beautifully crafted piano chord dictionary for iPhone & iPad. \n\n We've designed a beautiful sidekick for any beginner or advanced pianist. No fuss, no confusing menus or terminology - just the chords, in a handy little app. \n\n Choose a key to see chord variations, related chords and great sounding progressions in that key. Find chord inspiration for your next song.",
+        "tags": "Riot, APP, iOS, Cordova, PhoneGap, webapp"
+    }, {
+        "id": "1",
+        "imgUrl": "img/project-riotgear.jpg",
+        "imgAlt": "RiotGear",
+        "name": "RiotGear",
+        "url": "http://riotgear.js.org",
+        "desc": "The open source component library for RiotJS.",
+        "tags": "Riot, Components, RiotGear"
+    }, {
+        "id": "2",
+        "imgUrl": "img/casinotheater.jpg",
+        "imgAlt": "Casinotheater Winterthur",
+        "name": "Casinotheater Winterthur",
+        "url": "https://www.casinotheater.ch/theater/spielplan",
+        "desc": "Online calendar app to show the available Theater events loaded progressively via ajax",
+        "tags": "Riot, Calendar, animations, responsive, ajax, html5history"
+    }, {
+        "id": "3",
+        "imgUrl": "img/roost.jpg",
+        "imgAlt": "Roost.com - Map Search",
+        "name": "Roost.com",
+        "url": "https://www.roost.com/app/",
+        "desc": "Find & Rent Storage and Parking space nearby!",
+        "tags": "Riot, animations, responsive, APP, iOS, Cordova, PhoneGap, webapp, google maps",
+        "author": {
+            "name": "Luke Edwards",
+            "url": "https://lukeed.com"
         }
-    ]
+    }, {
+        "id": "4",
+        "imgUrl": "img/project-grokdo.jpg",
+        "imgAlt": "Grokdo.com - Work together and smash your goals for FREE",
+        "name": "Grokdo - Work together",
+        "url": "https://grokdo.com",
+        "desc": "Managing your activities should be sensible, easy and empowering. Grokdo is a web application that will help you and your team work together, complete tasks and smash your goals. Its FREE for small groups or single users.",
+        "tags": "Riot, Application, Teams, Goals, Tasks"
+    }, {
+        "id": "5",
+        "imgUrl": "img/project-sociocaster.jpg",
+        "imgAlt": "Sociocaster - Powerful Social Media Management Software",
+        "name": "Sociocaster.com",
+        "url": "https://sociocaster.com",
+        "desc": "Sociocaster is the easiest way to build your business by using social media.",
+        "tags": "Riot, Application, Sociocaster, Social Media, Scheduler, Facebook, Twitter, LinkedIn, Wordpress"
+    }, {
+        "id": "6",
+        "imgUrl": "img/riot-cheatsheet.jpg",
+        "imgAlt": "Riot Cheatsheet - an inofficial helper",
+        "name": "Riot Cheatsheet",
+        "url": "http://martinmuzatko.github.io/riot-cheatsheet/",
+        "desc": "Ever needed a quick refresher on some riot mechanics? The Riot Cheatsheet serves as compact reference with examples for about every existing riot API and templating mechanism. As a bonus, you get the source code of a riot/webpack managed project.",
+        "tags": "Riot, Markdown, Webpack, Search, Docs"
+    }, {
+        "id": "7",
+        "imgUrl": "img/frame00.jpg",
+        "imgAlt": "FRAME00.COM",
+        "name": "FRAME00.COM",
+        "url": "http://frame00.com",
+        "desc": "An Expanding Japanese Art Platform - the frame of new experiences. We curate fine art collections by artists and photographers beyond the screen.",
+        "tags": "Riot, WordPress, Art"
+    }, {
+        "id": "8",
+        "imgUrl": "img/project-dogada-org.jpg",
+        "imgAlt": "dogada.org",
+        "name": "IndieWeb blog — dogada.org",
+        "url": "https://dogada.org",
+        "desc": "Personal blog of Dmytro Dogadailo powered by Coect, IndieWeb, webmentions and microformats. Source code based on https://github.com/dogada/coect-starter-kit/",
+        "tags": "Riot, Coect, IndieWeb, WebMention, MF2, Social Media"
+    }, {
+        "id": "9",
+        "imgUrl": "img/project-search-result.jpg",
+        "imgAlt": "Article search page for Nikkei Online Edition",
+        "name": "Article search page for Nikkei Online Edition — www.nikkei.com",
+        "url": "http://www.nikkei.com/search/site/?searchKeyword=asia",
+        "desc": "Article search page for Nikkei Online Edition. It features coverage of economic and business information - including corporate news, domestic and global macroeconomic trends, and investment and management strategies. Available for Japanese content only.",
+        "tags": "Riot, news, search, market, company"
+    }, {
+        "id": "10",
+        "imgUrl": "img/project-amestage.jpg",
+        "imgAlt": "amestage.com",
+        "name": "AMESTAGE - amestage.com",
+        "url": "https://amestage.com",
+        "desc": "AMESTAGE is a Live-Streaming Service which goes one step further than all others. This service enables the audience to actually “play” with the celebrities that stream through AMESTAGE with the new “Variety Corner System”. This feature allows celebrities to choose from over 50 themes and games we have prepared, and play quizzes or take surveys from the audience. *People who can stream are limited to people in production agencies. *It is a Japanese app with only Japanese content.",
+        "tags": "Riot, webapp, Live-Streaming, iOS, Android, Entertainment"
+    }, {
+        "id": "11",
+        "imgUrl": "img/elixir-jobs.jpg",
+        "imgAlt": "Elixir Jobs",
+        "name": "Elixir Jobs",
+        "url": "https://elixir-jobs.org/?utm_source=github&utm_medium=made-with-riot&utm_campaign=links",
+        "desc": "Elixir Jobs is the dedicated job bulletin for the Elixir programming language. It connects talented developers with the companies who hire them.",
+        "tags": "Riot, Elixir, Job Search, Offline, Service Worker, Material Design",
+        "author": {
+            "name": "Luke Edwards",
+            "url": "https://lukeed.com"
+        }
+    }, {
+        "id": "12",
+        "imgUrl": "img/buildy.jpg",
+        "imgAlt": "Buildy",
+        "name": "Buildy",
+        "url": "https://buildyapp.com",
+        "desc": "Buildy helps you create your mobile application and website. Choose from news, coupons, map and many other functionalities to create an app just for you",
+        "tags": "Riot, App builder, CMS",
+        "author": {
+            "name": "Claude Tech",
+            "url": "http://claudetech.com"
+        }
+    }, {
+        "id": "13",
+        "imgUrl": "img/project-excite.jpg",
+        "imgAlt": "Excite",
+        "name": "Excite",
+        "url": "http://www.excite.co.jp",
+        "desc": "Excite is a convenient and secure portal site that develops topical news, popular blogs, tanslations and dictionaries, friends search / wedding services, cheap providers etc. We also disseminate information on entertainment, music, cooking and child care widely.",
+        "tags": "Riot, Portal, Top"
+    }, {
+        "id": "14",
+        "imgUrl": "img/project-honda-pilot-configurator.jpg",
+        "imgAlt": "Honda Pilot",
+        "name": "Honda Pilot",
+        "url": "http://automobiles.honda.com/pilot#build-price",
+        "desc": "Riot enabled us to build a top quality application on an extremely challenging project with a ton of moving parts. Riot's incredible flexibility allowed us to move fast under tight deadlines, and pivot on a dime for multiple stakeholders.",
+        "tags": "Riot, Automotive, Configurator, Build and Price"
+    }, {
+        "id": "15",
+        "imgUrl": "img/project-grafy.jpg",
+        "imgAlt": "Grafy - Powerful Social Media Image Editor",
+        "name": "Grafy.io",
+        "url": "https://grafy.io",
+        "desc": "Easy Social Media Image Editor",
+        "tags": "Riot, Application, Image Editor, Photo, Picture, Sociocaster, Social Media, Scheduler, Facebook, Twitter, LinkedIn, Wordpress"
+    }]
 }
