@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#408bc2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" sizes="16x16" href="img/favicon_16.png">
+    <link rel="icon" sizes="32x32" href="img/favicon_32.png">
+    <meta charset="UTF-8">
+    <title>Made With Riot</title>
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <top-bar></top-bar>
+        <card-list id="card-list"></card-list>
+        <right-drawer></right-drawer>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script>
+    var $rightDrawer = document.querySelector("right-drawer");
+    var dataPromise=null;
+
+    function getProjectData() {
+        return dataPromise;
+    }
+
+    window.onload = function() {
+        dataPromise = new Promise(function(resolve, reject) {
+            var req = new XMLHttpRequest()
+
+            req.onreadystatechange = function() {
+                if (req.readyState === 4 &&
+                    (req.status === 200 || !req.status && req.responseText.length)) {
+                    resolve(JSON.parse(req.responseText));
+                }
+                else if(req.readyState === 4 && req.status !== 200){
+                    reject("Ajax Failed");
+                }
+            }
+            req.open('GET', "data/projects.json", true);
+            req.send('');
+        });
+
+        window.TopBarComponent = riot.mount('top-bar', {
+            cardSelector: '#card-list',
+            logoUrl: 'img/logo_2x.png',
+            logoAlt: 'Made With Riot',
+            slogan: 'A list of apps and components made with Riot.js library.',
+            menu: [{
+                text: 'Riot.js Website',
+                isImportant: true,
+                url: 'http://riotjs.com/'
+            }, {
+                text: 'Submit a Project',
+                url: 'https://github.com/riot/made-with-riot#adding-a-project-to-made-with-riot'
+            }]
+        })[0];
+
+        window.CardListComponent = riot.mount('card-list', {})[0];
+
+        window.RightDrawerComponent = riot.mount("right-drawer", {})[0];
+        riot.route.exec()
+    }
+
+    riot.route.start();
+
+    riot.route("/", function() {
+        $rightDrawer.closeDrawer();
+    });
+
+    riot.route("/details/*", function(pid) {
+        if (pid) {
+            $rightDrawer.openDrawer(pid);
+        }
+
+    });
+    </script>
+</body>
+
+</html>
