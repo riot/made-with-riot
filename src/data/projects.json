@@ -146,6 +146,15 @@
             "url": "http://automobiles.honda.com/pilot#build-price",
             "desc": "Riot enabled us to build a top quality application on an extremely challenging project with a ton of moving parts. Riot's incredible flexibility allowed us to move fast under tight deadlines, and pivot on a dime for multiple stakeholders.",
             "tags": "Riot, Automotive, Configurator, Build and Price"
+        },
+         {
+            "id": "15",
+            "imgUrl": "img/project-windytv.png",
+            "imgAlt": "Windytv",
+            "name": "Windytv",
+            "url": "https://windy.tv/",
+            "desc": "Windy.tv, weather the fastest growning forecasting server nowdays. Riot components used as a plug-ins for lazy loaded pieces of app.",
+            "tags": "Riot, windytv"
         }
     ]
 }
