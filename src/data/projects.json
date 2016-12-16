@@ -155,6 +155,15 @@
             "url": "https://windy.tv/",
             "desc": "Windy.tv, weather the fastest growning forecasting server nowdays. Riot components used as a plug-ins for lazy loaded pieces of app.",
             "tags": "Riot, windytv"
+        },
+         {
+            "id": "16",
+            "imgUrl": "img/datamatic.io.png",
+            "imgAlt": "Datamatic.io",
+            "name": "Datamatic",
+            "url": "http://datamatic.io",
+            "desc": "Editable data visualizations for the web - pick a data visualization template, customize it, and publish on your website.",
+            "tags": "Riot, data visualizations, datamatic, infographic"
         }
     ]
 }
