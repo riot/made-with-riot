@@ -155,6 +155,15 @@
             "url": "https://windy.tv/",
             "desc": "Windy.tv, weather the fastest growning forecasting server nowdays. Riot components used as a plug-ins for lazy loaded pieces of app.",
             "tags": "Riot, windytv"
+        },
+        {
+            "id": "16",
+            "imgUrl": "img/project-lingviny.png",
+            "imgAlt": "Lingviny",
+            "name": "Lingviny",
+            "url": "https://lingviny.com/translators/",
+            "desc": "Lingviny helps professional translators work flexible hours and earn money doing what they love",
+            "tags": "Riot, lingviny, riot-route, app"
         }
     ]
 }
