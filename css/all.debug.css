@@ -255,7 +255,7 @@ card-list {
 
 .card-list__card {
   width: 30%;
-  margin-bottom: 5%;
+  margin-bottom: 80px;
   position: relative; }
   .card-list__card .card-list__image {
     display: block;
@@ -322,8 +322,7 @@ card-list {
 
 @media (max-width: 768px) {
   .card-list__card {
-    width: 100%;
-    margin-bottom: 10%; }
+    width: 100%; }
     .card-list__card .card-list__name {
       text-align: center;
       margin-top: 2rem; }
