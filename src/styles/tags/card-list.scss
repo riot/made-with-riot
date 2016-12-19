@@ -21,7 +21,7 @@ card-list {
 
 .card-list__card {
     width: 30%;
-    margin-bottom: 5%;
+    margin-bottom: 80px;
     position: relative;
 
     .card-list__image {
@@ -112,7 +112,6 @@ card-list {
 @include SmallScreen {
     .card-list__card {
         width: 100%;
-        margin-bottom: 10%;
 
         .card-list__name {
             text-align: center;
