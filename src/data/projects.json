@@ -147,7 +147,7 @@
             "desc": "Riot enabled us to build a top quality application on an extremely challenging project with a ton of moving parts. Riot's incredible flexibility allowed us to move fast under tight deadlines, and pivot on a dime for multiple stakeholders.",
             "tags": "Riot, Automotive, Configurator, Build and Price"
         },
-         {
+        {
             "id": "15",
             "imgUrl": "img/project-windytv.png",
             "imgAlt": "Windytv",
@@ -158,6 +158,15 @@
         },
         {
             "id": "16",
+            "imgUrl": "img/datamatic.io.png",
+            "imgAlt": "Datamatic.io",
+            "name": "Datamatic",
+            "url": "http://datamatic.io",
+            "desc": "Editable data visualizations for the web - pick a data visualization template, customize it, and publish on your website.",
+            "tags": "Riot, data visualizations, datamatic, infographic"
+        },
+        {
+            "id": "17",
             "imgUrl": "img/project-lingviny.png",
             "imgAlt": "Lingviny",
             "name": "Lingviny",
