@@ -173,6 +173,15 @@
             "url": "https://lingviny.com/translators/",
             "desc": "Lingviny helps professional translators work flexible hours and earn money doing what they love",
             "tags": "Riot, lingviny, riot-route, app"
+        },
+        {
+            "id": "17",
+            "imgUrl": "img/holdmyticket.png",
+            "imgAlt": "HoldMyTicket",
+            "name": "HoldMyTicket",
+            "url": "https://holdmyticket.com",
+            "desc": "Complete ticketing solution for event organizers.",
+            "tags": "Riot, events, holdmytickt, tickets, sales, point of sales"
         }
     ]
 }
