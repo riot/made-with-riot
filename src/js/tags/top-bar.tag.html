@@ -229,7 +229,7 @@
             self.refs.compactTopBar.querySelector('.top-bar__mobile-trigger .icon-close').classList.add('active');
 
             // Add animation classes to components
-            self.refs.cards.classList.add('animate','animate-slide-right');
+            self.cards.classList.add('animate','animate-slide-right');
             self.refs.mainTopBar.classList.add('animate','animate-slide-right');
             self.refs.compactTopBar.childNodes[1].classList.add('animate','animate-slide-right');
             self.refs.mobileMenu.classList.add('animate', 'animate-fade-in-up');
@@ -248,14 +248,14 @@
             self.refs.compactTopBar.querySelector('.top-bar__mobile-trigger .icon-close').classList.remove('active');
 
             // Add animation classes to components
-            self.refs.cards.classList.add('animate','animate-slide-left');
+            self.cards.classList.add('animate','animate-slide-left');
             self.refs.mainTopBar.classList.add('animate','animate-slide-left');
             self.refs.compactTopBar.childNodes[1].classList.add('animate','animate-slide-left');
             self.refs.mobileMenu.classList.add('animate', 'animate-fade-out-z');
         }
 
         clearMobileMenuClasses() {
-            self.refs.cards.classList.remove('animate', 'animate-slide-left', 'animate-slide-right');
+            self.cards.classList.remove('animate', 'animate-slide-left', 'animate-slide-right');
             self.refs.mainTopBar.classList.remove('animate','animate-slide-left', 'animate-slide-right');
             self.refs.compactTopBar.childNodes[1].classList.remove('animate','animate-slide-left', 'animate-slide-right');
             self.refs.mobileMenu.classList.remove('animate', 'animate-fade-out-z', 'animate-fade-in-up');
