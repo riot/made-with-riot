@@ -22,6 +22,9 @@
     </main>
     <script src="js/all.min.js"></script>
     <script>
+    // Adding standalone Riot route to Riot (v3 issue)
+    riot.route = route
+    
     var $rightDrawer = document.querySelector("right-drawer");
     var dataPromise=null;
 
@@ -29,7 +32,7 @@
         return dataPromise;
     }
 
-    window.onload = function() {
+    window.onload = function() {        
         dataPromise = new Promise(function(resolve, reject) {
             var req = new XMLHttpRequest()
 
