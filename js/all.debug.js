@@ -196,6 +196,23 @@
 
 //-----
 
+var GoogleAnalytics = (function(){
+
+    function GoogleAnalytics() {
+        this.UA = 'UA-000001';
+    }
+
+    GoogleAnalytics.prototype.message = function(text) {
+        return this.UA;
+    }
+
+    return GoogleAnalytics;
+
+})();
+
+
+//-----
+
 var route = (function () {
 'use strict';
 
@@ -3309,23 +3326,6 @@ exports.unregister = unregister$$1;
 Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
-//-----
-
-var GoogleAnalytics = (function(){
-
-    function GoogleAnalytics() {
-        this.UA = 'UA-000001';
-    }
-
-    GoogleAnalytics.prototype.message = function(text) {
-        return this.UA;
-    }
-
-    return GoogleAnalytics;
-
-})();
-
 
 //-----
 
