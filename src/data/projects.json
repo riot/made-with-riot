@@ -195,19 +195,6 @@
                 "name": "Simon Douglas",
                 "url": "http://simondouglas.com"
             }
-        },
-        {
-            "id": "20",
-            "imgUrl": "img/project-dripcap.jpg",
-            "imgAlt": "Dripcap",
-            "name": "Dripcap",
-            "url": "https://github.com/dripcap/dripcap",
-            "desc": "Dripcap is a modern packet analyzer based on Electron",
-            "tags": "Riot, Electron, Node.js, network, pcap",
-            "author": {
-                "name": "Ron Hashimoto",
-                "url": "https://github.com/h2so5"
-            }
         }
     ]
 }
