@@ -195,6 +195,19 @@
                 "name": "Simon Douglas",
                 "url": "http://simondouglas.com"
             }
+        },
+        {
+            "id": "20",
+            "imgUrl": "img/txrxlabs-org-screenshot.jpg",
+            "imgAlt": "TXRX Labs",
+            "name": "TXRX Labs",
+            "url": "https://txrxlabs.org/",
+            "desc": "Non-profit makerspace dedicated to education and making cool stuff.",
+            "tags": "Riot, Django, Unrest",
+            "author": {
+                "name": "Chris Cauley",
+                "url": "https://github.com/chriscauley/"
+            }
         }
     ]
 }
