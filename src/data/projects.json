@@ -208,6 +208,19 @@
                 "name": "Ron Hashimoto",
                 "url": "https://github.com/h2so5"
             }
+        },
+        {
+          "id": "21"
+          "imgUrl": "img/txrxlabs-org-screenshot.jpg",
+            "imgAlt": "TXRX Labs",
+            "name": "TXRX Labs",
+            "url": "https://txrxlabs.org/",
+            "desc": "Non-profit makerspace dedicated to education and making cool stuff.",
+            "tags": "Riot, Django, Unrest",
+            "author": {
+                "name": "Chris Cauley",
+                "url": "https://github.com/chriscauley/"
+            }
         }
     ]
 }
