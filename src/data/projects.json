@@ -221,6 +221,15 @@
                 "name": "Chris Cauley",
                 "url": "https://github.com/chriscauley/"
             }
+        },
+        {
+          "id": "22",
+          "imgUrl": "img/veglings.jpg",
+          "imgAlt": "Veglings",
+          "name": "Veglings",
+          "url": "https://veglings.com",
+          "desc": "The Vegan Social Network. Recipes, restaurants, travel, fashion, news etc for a plant-based lifestyle.",
+          "tags": "Riot, Vegan, Recipes, Travel, News, Social, SocialNetwork, PlantBased"
         }
     ]
 }
