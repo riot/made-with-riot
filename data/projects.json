@@ -230,6 +230,15 @@
           "url": "https://veglings.com",
           "desc": "The Vegan Social Network. Recipes, restaurants, travel, fashion, news etc for a plant-based lifestyle.",
           "tags": "Riot, Vegan, Recipes, Travel, News, Social, SocialNetwork, PlantBased"
+        },
+        {
+            "id": "22",
+            "imgUrl": "img/wwdjapan.jpg",
+            "imgAlt": "WWD JAPAN.com",
+            "name": "WWD JAPAN.com",
+            "url": "https://www.wwdjapan.com",
+            "desc": "Fashion News Media WWD's Japanese version website",
+            "tags": "Riot, Serverless"
         }
     ]
 }
