@@ -239,6 +239,15 @@
             "url": "https://www.wwdjapan.com",
             "desc": "Fashion News Media WWD's Japanese version website",
             "tags": "Riot, Serverless"
+        },
+        {
+            "id": "23",
+            "imgUrl": "img/project-taxipixi.jpg",
+            "imgAlt": "TaxiPixi",
+            "name": "TaxiPixi",
+            "url": "https://www.TaxiPixi.com",
+            "desc": "Taxi booking application which assign car that best suits for your needs",
+            "tags": "Riot, Ruby"
         }
     ]
 }
