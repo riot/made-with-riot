@@ -248,6 +248,15 @@
             "url": "https://www.TaxiPixi.com",
             "desc": "Taxi booking application which assign car that best suits for your needs",
             "tags": "Riot, Ruby"
+        },
+        {
+            "id": "24",
+            "imgUrl": "img/project-webbyjam.png",
+            "imgAlt": "WebbyJam",
+            "name": "WebbyJam",
+            "url": "http://www.webbyjam.com",
+            "desc": "Web application based on web audio API. Users can edit and share short tunes.",
+            "tags": "Riot, Python, Web Audio API"
         }
     ]
 }
