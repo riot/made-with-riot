@@ -257,6 +257,19 @@
             "url": "http://www.webbyjam.com",
             "desc": "Web application based on web audio API. Users can edit and share short tunes.",
             "tags": "Riot, Python, Web Audio API"
+        },
+        {
+            "id": "25",
+            "imgUrl": "img/project-cryptoholder.png",
+            "imgAlt": "CryptoHolder",
+            "name": "CryptoHolder",
+            "url": "https://app.cryptoholder.com",
+            "desc": "A Progressive Web App that lets you choose between 700+ cryptocurrencies and follow their prices in real-time, from desktop or smartphone. For free.",
+            "tags": "Riot, REST, API, PWA, App, Mobile",
+            "author": {
+                "name": "Claudio Holanda",
+                "url": "https://github.com/kazzkiq/"
+            }
         }
     ]
 }
