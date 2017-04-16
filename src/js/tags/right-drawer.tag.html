@@ -1,5 +1,5 @@
 <right-drawer>
-  <div class="phantom" if="{state==='opened'}" onclick="{goHome}"></div>
+  <div class="phantom {state}" onclick="{goHome}"></div>
   <div class="rightdrawer {state}">
     <loader if="{!isDataLoaded}"></loader>
     <div if="{isDataLoaded}" class="contents">
@@ -9,24 +9,25 @@
       <article class="details">
         <div class="name">{name}</div>
         <a href="{link}" class="link">{link}</a>
+        <cite if="{author}" class="author">Author: <a href="{author.url}">{author.name}</a></cite>
         <p class="text">
           {desc}
         </p>
         <div class="tags">
-          <span class="tag" each="{tag in tags}">#{tag.trim()} </span>
+          <span class="tag" each="{tag in projectTags}" onclick="{TopBarComponent.filterByTag}">#{tag.trim().toLowerCase()} </span>
         </div>
       </acticle>
-      <div class="sitelink">
-        <a href="{link}" class="button-primary">Go To Website</a>
+      <div if="{ link }" class="sitelink">
+        <a href="{link}" target="_blank" rel="nofollow" class="button-primary">Go To Website</a>
       </div>
-      
+
     </div>
   </div>
   <script>
     var _self=this;
     _self.isDataLoaded=false;
     _self.state="closed";
-    _self.tags=[];
+    _self.projectTags=[];
     this.on("mount",function(){
       this.root.closeDrawer=function(){
         _self.update({
@@ -50,7 +51,7 @@
                 project=projectData[projectIndex];
                 break;
               }
-            } 
+            }
             if(project){
               _self.update({
                 name:project.name,
@@ -58,8 +59,9 @@
                 imgUrl:project.imgUrl,
                 imgAlt:project.imgAlt,
                 desc:project.desc,
-                tags:project.tags.split(","),
-                state:"opened"
+                projectTags: project.tags.split(","),
+                state:"opened",
+                author: project.author || false
               });
             }
         });

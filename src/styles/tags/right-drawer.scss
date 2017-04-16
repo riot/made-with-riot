@@ -1,5 +1,8 @@
 @import '../variables';
 @import '../helpers';
+
+$right-drawer-width: 400px;
+
 right-drawer {
     .contents {
         padding: 24px;
@@ -9,46 +12,44 @@ right-drawer {
         width: 100%;
         height: 100%;
         height: 100vh;
-        background-color: rgba(0,0,0,0.2);
+        background-color: rgba(0,0,0,0.5);
         z-index: $z-layer-40;
         left:0px;
         top:0px;
+
+        opacity:0;
+        pointer-events: none;
+
+        transform: translateZ(0);
+
+        transition:opacity 0.4s linear;
+
+        &.opened {
+            opacity:1;
+            pointer-events: auto;
+        }
     }
     .rightdrawer {
         display: block;
         position: fixed;
-        right: 0px;
+        right: -$right-drawer-width;
         top: 0px;
-        transform: translateZ(0);
-        width: 30vw;
-        min-width: 300px;
+        width: $right-drawer-width;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: $color-white;
+        background-color: fade-out($color-black, 0.05);
         z-index: $z-layer-50;
         font-size: 16px;
         color: $color-lightgrey;
         line-height: 1.6;
         overflow: scroll;
-        transform: translateX(130vw) translateZ(0);
-        -webkit-transform: translateX(130vw) translateZ(0);
-        -moz-transform: translateX(130vw) translateZ(0);
-        -ms-transform: translateX(130vw) translateZ(0);
-        -o-transform: translateX(130vw) translateZ(0);
 
-        transition-duration:400ms;
-        -webkit-transition-duration:400ms;
-        -moz-transition-duration:400ms;
-        -ms-transition-duration:400ms;
-        -o-transition-duration:400ms;
-
+        transform: translate3d(0, 0, 0);
+        transition-duration:800ms;
         transition-property: transform;
-        -webkit-transition-property: transform;
-        -moz-transition-property: transform;
-        -ms-transition-property: transform;
-        -o-transition-property: transform;
+        transition-timing-function: $motion-slow-end;
+
         &.opened {
-            transform: translateX(0vw) translateZ(0);
+            transform: translate3d(-$right-drawer-width, 0, 0);
         }
         .pic-cover {
             border-radius: 3px;
@@ -58,6 +59,19 @@ right-drawer {
     }
     .name {
         color: #fff;
+    }
+    .author {
+        display: block;
+        font-style: normal;
+        font-size: 12px;
+        margin-top: 10px;
+        border-top: 1px solid rgba(255,255,255,0.06);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        padding: 10px 0;
+
+        a {
+            font-weight: bold;
+        }
     }
     .link {
         font-weight: 300;
@@ -69,6 +83,15 @@ right-drawer {
         font-weight: 300;
         font-size: 14px;
         font-style: italic;
+
+        .tag {
+            padding-right: 5px;
+            cursor: pointer;
+            
+            &:hover {
+                color: #fff;
+            }
+        }
     }
     .sitelink{
         text-align: center;

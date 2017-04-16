@@ -22,6 +22,9 @@
     </main>
     <script src="js/all.min.js"></script>
     <script>
+    // Adding standalone Riot route to Riot (v3 issue)
+    riot.route = route
+    
     var $rightDrawer = document.querySelector("right-drawer");
     var dataPromise=null;
 
@@ -29,7 +32,7 @@
         return dataPromise;
     }
 
-    window.onload = function() {
+    window.onload = function() {        
         dataPromise = new Promise(function(resolve, reject) {
             var req = new XMLHttpRequest()
 
@@ -46,22 +49,24 @@
             req.send('');
         });
 
-        riot.mount('top-bar', {
+        window.TopBarComponent = riot.mount('top-bar', {
             cardSelector: '#card-list',
             logoUrl: 'img/logo_2x.png',
             logoAlt: 'Made With Riot',
             slogan: 'A list of apps and components made with Riot.js library.',
             menu: [{
                 text: 'Riot.js Website',
-                isImportant: true
+                isImportant: true,
+                url: 'http://riotjs.com/'
             }, {
-                text: 'Submit a Project'
+                text: 'Submit a Project',
+                url: 'https://github.com/riot/made-with-riot#adding-a-project-to-made-with-riot'
             }]
-        });
+        })[0];
 
-        riot.mount('card-list', {});
+        window.CardListComponent = riot.mount('card-list', {})[0];
 
-        riot.mount("right-drawer", {});
+        window.RightDrawerComponent = riot.mount("right-drawer", {})[0];
         riot.route.exec()
     }
 

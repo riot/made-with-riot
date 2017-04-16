@@ -21,15 +21,40 @@ card-list {
 
 .card-list__card {
     width: 30%;
-    margin-bottom: 5%;
+    margin-bottom: 80px;
     position: relative;
 
     .card-list__image {
+        display: block;
         position:relative;
         border-radius: 0.4rem;
-        box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.1);
+
+        &:hover {
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            pointer-events: none;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 0.4rem;
+            position: absolute;
+            z-index: $z-layer-20;
+            background: rgba(0,0,0,0.2);
+            opacity: 0;
+
+            transition: opacity 0.25s linear;
+        }
 
         &::before {
+            pointer-events: none;
             content: '';
             width: 100%;
             height: 100%;
@@ -55,6 +80,10 @@ card-list {
     }
 
     .card-list__url {
+        width: calc(100% - 120px);  // 100% - detail button witdth
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         font-size: 1.5rem;
         color: $color-lightgrey;
     }
@@ -83,7 +112,6 @@ card-list {
 @include SmallScreen {
     .card-list__card {
         width: 100%;
-        margin-bottom: 10%;
 
         .card-list__name {
             text-align: center;
@@ -91,6 +119,7 @@ card-list {
         }
 
         .card-list__url {
+            width: 100%;
             text-align: center;
         }
 
