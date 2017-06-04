@@ -270,6 +270,19 @@
                 "name": "Claudio Holanda",
                 "url": "https://github.com/kazzkiq/"
             }
-        }
+        },
+        {
+            "id": "26",
+            "imgUrl": "img/project-climate-lab.jpg",
+            "imgAlt": "Climate Lab",
+            "name": "Climate Lab",
+            "url": "https://climate-lab.eu/",
+            "desc": "A carbon footprint web app focused on taking action and tackling climate change.",
+            "tags": "Riot, Climate Change, Clean Energy, Consumer Action, Materialize CSS",
+            "author": {
+                "name": "Gaspard Benoit",
+                "url": "https://plus.google.com/u/0/110144125752918683436"
+            }
+        },
     ]
 }
