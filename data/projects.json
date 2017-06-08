@@ -283,6 +283,19 @@
                 "name": "Gaspard Benoit",
                 "url": "https://plus.google.com/u/0/110144125752918683436"
             }
+        },
+        {
+          "id": "27",
+          "imgUrl": "img/misskey.jpg",
+            "imgAlt": "Misskey",
+            "name": "Misskey",
+            "url": "https://misskey.xyz",
+            "desc": "A Twitter like SNS.",
+            "tags": "Riot, SNS",
+            "author": {
+                "name": "syuilo",
+                "url": "https://syuilo.com/"
+            }
         }
     ]
 }
