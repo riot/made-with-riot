@@ -273,7 +273,20 @@
         },
         {
             "id": "26",
-            "imgUrl": "img/misskey.jpg",
+            "imgUrl": "img/project-climate-lab.jpg",
+            "imgAlt": "Climate Lab",
+            "name": "Climate Lab",
+            "url": "https://climate-lab.eu/",
+            "desc": "A carbon footprint web app focused on taking action and tackling climate change.",
+            "tags": "Riot, Climate Change, Clean Energy, Consumer Action, Materialize CSS",
+            "author": {
+                "name": "Gaspard Benoit",
+                "url": "https://plus.google.com/u/0/110144125752918683436"
+            }
+        },
+        {
+          "id": "27",
+          "imgUrl": "img/misskey.jpg",
             "imgAlt": "Misskey",
             "name": "Misskey",
             "url": "https://misskey.xyz",
