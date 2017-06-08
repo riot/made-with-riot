@@ -270,6 +270,19 @@
                 "name": "Claudio Holanda",
                 "url": "https://github.com/kazzkiq/"
             }
+        },
+        {
+            "id": "26",
+            "imgUrl": "img/misskey.jpg",
+            "imgAlt": "Misskey",
+            "name": "Misskey",
+            "url": "https://misskey.xyz",
+            "desc": "A Twitter like SNS.",
+            "tags": "Riot, SNS",
+            "author": {
+                "name": "syuilo",
+                "url": "https://syuilo.com/"
+            }
         }
     ]
 }
