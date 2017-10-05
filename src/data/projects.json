@@ -309,6 +309,15 @@
                 "name": "Francesco Sirocco",
                 "url": "https://www.writetotheuniverse.com/contacts"
             }
+        },
+        {
+            "id": "29",
+            "imgUrl": "img/project-CIMDraw.png",
+            "imgAlt": "CIMDraw",
+            "name": "CIMDraw",
+            "url": "https://bitbucket.org/danielePala/cimdraw",
+            "desc": "CIMDraw is a WebApp to view and edit IEC CIM files (ENTSO-E CGMES profile)",
+            "tags": "Riot, Electrical Drawing, Standards, CIM, RDF, Power Flow, Data Models"
         }        
     ]
 }
