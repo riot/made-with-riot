@@ -309,6 +309,19 @@
                 "name": "Francesco Sirocco",
                 "url": "https://www.writetotheuniverse.com/contacts"
             }
-        }        
+        },
+        {
+          "id": "29",
+          "imgUrl": "img/outline.png",
+            "imgAlt": "Outline",
+            "name": "Outline",
+            "url": "https://outline.com",
+            "desc": "Outline is a free service that makes websites more readable.",
+            "tags": "Riot, Redux, Python, Flask, Lambda, Tools",
+            "author": {
+                "name": "chilldude",
+                "url": "https://github.com/chilldude"
+            }
+        }
     ]
 }
