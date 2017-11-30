@@ -322,6 +322,15 @@
                 "name": "chilldude",
                 "url": "https://github.com/chilldude"
             }
+        },
+        {
+            "id": "30",
+            "imgUrl": "img/project-magicalmeet.png",
+            "imgAlt": "MagicalMeet",
+            "name": "MagicalMeet",
+            "url": "https://magicalmeet.com",
+            "desc": "MagicalMeet is a startup that pushes the limit of Internet-based communications. We create virtual presence applications for productivity and entertainment.",
+            "tags": "Riot, WebRTC, Communications, Productivity, Entertainment"
         }
     ]
 }
