@@ -19,8 +19,8 @@ To run the project, follow the steps bellow after cloning the repository:
 
 ```bash
 npm install
-gulp compile:all
-gulp lift
+npm run build
+npm run start
 ```
 
 Then access the application on http://localhost:8000/
