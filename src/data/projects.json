@@ -322,6 +322,15 @@
             "url": "https://magicalmeet.com",
             "desc": "MagicalMeet is a startup that pushes the limit of Internet-based communications. We create virtual presence applications for productivity and entertainment.",
             "tags": "Riot, WebRTC, Communications, Productivity, Entertainment"
+        },
+        {
+            "id": "31",
+            "imgUrl": "img/oddswizz-com.png",
+            "imgAlt": "OddsWizz.com",
+            "name": "OddWizz Football Stats",
+            "url": "https://www.oddswizz.com",
+            "desc": "OddWizz provides unique football stats that are simple and actionable for the most important European national leagues.",
+            "tags": "Riot, SVG, Boostrap, charts, statistics, visualization"
         }
     ]
 }
