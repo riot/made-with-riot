@@ -95,15 +95,6 @@
             "tags": "Riot, news, search, market, company"
         },
         {
-            "id": "10",
-            "imgUrl": "img/project-amestage.jpg",
-            "imgAlt": "amestage.com",
-            "name": "AMESTAGE - amestage.com",
-            "url": "https://amestage.com",
-            "desc": "AMESTAGE is a Live-Streaming Service which goes one step further than all others. This service enables the audience to actually “play” with the celebrities that stream through AMESTAGE with the new “Variety Corner System”. This feature allows celebrities to choose from over 50 themes and games we have prepared, and play quizzes or take surveys from the audience. *People who can stream are limited to people in production agencies. *It is a Japanese app with only Japanese content.",
-            "tags": "Riot, webapp, Live-Streaming, iOS, Android, Entertainment"
-        },
-        {
             "id": "11",
             "imgUrl": "img/elixir-jobs.jpg",
             "imgAlt": "Elixir Jobs",
