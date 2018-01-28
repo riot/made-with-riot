@@ -332,5 +332,15 @@
             "desc": "OddWizz provides unique football stats that are simple and actionable for the most important European national leagues.",
             "tags": "Riot, SVG, Boostrap, charts, statistics, visualization"
         }
+	,
+        {
+            "id": "33",
+            "imgUrl": "img/ultranote-online.jpg",
+            "imgAlt": "mywallet.ultranote.org",
+            "name": "UltraNote Online Wallet",
+            "url": "https://mywallet.ultranote.org",
+            "desc": "UltraNote is a decentralized privacy protected blockchain platform With instant untraceable encrypted messages, Secure CPU efficient ASIC resistant mining. Blockchain deposits with interest.",
+            "tags": "Riot, Finance, webpack, socket.io, blockchain"
+        }
     ]
 }
