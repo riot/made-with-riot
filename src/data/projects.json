@@ -341,6 +341,15 @@
             "url": "https://mywallet.ultranote.org",
             "desc": "UltraNote is a decentralized privacy protected blockchain platform With instant untraceable encrypted messages, Secure CPU efficient ASIC resistant mining. Blockchain deposits with interest.",
             "tags": "Riot, Finance, webpack, socket.io, blockchain"
+        },
+        {
+            "id": "34",
+            "imgUrl": "img/project-viron.jpg",
+            "imgAlt": "Viron",
+            "name": "Viron",
+            "url": "https://cam-inc.github.io/viron-doc",
+            "desc": "Viron is a Automated Design-based Management Console. All you need to do is just create a API server and a OAS2.0 json file. Then viron admin tool is ready to use. You don't need to write frontend code!",
+            "tags": "Riot, dashboard, swagger, oas, admin, admin-dashboard, admin-tools"
         }
     ]
 }
