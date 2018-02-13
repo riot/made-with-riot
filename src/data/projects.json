@@ -350,6 +350,15 @@
             "url": "https://cam-inc.github.io/viron-doc",
             "desc": "Viron is a Automated Design-based Management Console. All you need to do is just create a API server and a OAS2.0 json file. Then viron admin tool is ready to use. You don't need to write frontend code!",
             "tags": "Riot, dashboard, swagger, oas, admin, admin-dashboard, admin-tools"
+        },
+        {
+            "id": "35",
+            "imgUrl": "img/destinyexotics-com.jpg",
+            "imgAlt": "Destiny Exotics",
+            "name": "DestinyExotics.com",
+            "url": "https://destinyexotics.com",
+            "desc": "Destiny Exotics is creating the ultimate collection resource for Destiny players.",
+            "tags": "Riot, SVG, Python, Flask, REST API"
         }
     ]
 }
