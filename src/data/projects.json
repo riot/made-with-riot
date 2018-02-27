@@ -95,15 +95,6 @@
             "tags": "Riot, news, search, market, company"
         },
         {
-            "id": "10",
-            "imgUrl": "img/project-amestage.jpg",
-            "imgAlt": "amestage.com",
-            "name": "AMESTAGE - amestage.com",
-            "url": "https://amestage.com",
-            "desc": "AMESTAGE is a Live-Streaming Service which goes one step further than all others. This service enables the audience to actually “play” with the celebrities that stream through AMESTAGE with the new “Variety Corner System”. This feature allows celebrities to choose from over 50 themes and games we have prepared, and play quizzes or take surveys from the audience. *People who can stream are limited to people in production agencies. *It is a Japanese app with only Japanese content.",
-            "tags": "Riot, webapp, Live-Streaming, iOS, Android, Entertainment"
-        },
-        {
             "id": "11",
             "imgUrl": "img/elixir-jobs.jpg",
             "imgAlt": "Elixir Jobs",
@@ -118,6 +109,277 @@
         },
         {
             "id": "12",
+            "imgUrl": "img/buildy.jpg",
+            "imgAlt": "Buildy",
+            "name": "Buildy",
+            "url": "https://buildyapp.com",
+            "desc": "Buildy helps you create your mobile application and website. Choose from news, coupons, map and many other functionalities to create an app just for you",
+            "tags": "Riot, App builder, CMS",
+            "author": {
+                "name": "Claude Tech",
+                "url": "http://claudetech.com"
+            }
+        },
+        {
+            "id": "13",
+            "imgUrl": "img/project-excite.jpg",
+            "imgAlt": "Excite",
+            "name": "Excite",
+            "url": "http://www.excite.co.jp",
+            "desc": "Excite is a convenient and secure portal site that develops topical news, popular blogs, tanslations and dictionaries, friends search / wedding services, cheap providers etc. We also disseminate information on entertainment, music, cooking and child care widely.",
+            "tags": "Riot, Portal, Top"
+        },
+        {
+            "id": "14",
+            "imgUrl": "img/project-honda-pilot-configurator.jpg",
+            "imgAlt": "Honda Pilot",
+            "name": "Honda Pilot",
+            "url": "http://automobiles.honda.com/pilot#build-price",
+            "desc": "Riot enabled us to build a top quality application on an extremely challenging project with a ton of moving parts. Riot's incredible flexibility allowed us to move fast under tight deadlines, and pivot on a dime for multiple stakeholders.",
+            "tags": "Riot, Automotive, Configurator, Build and Price"
+        },
+        {
+            "id": "15",
+            "imgUrl": "img/project-windytv.png",
+            "imgAlt": "Windytv",
+            "name": "Windytv",
+            "url": "https://windy.tv/",
+            "desc": "Windy.tv, weather the fastest growning forecasting server nowdays. Riot components used as a plug-ins for lazy loaded pieces of app.",
+            "tags": "Riot, windytv"
+        },
+        {
+            "id": "16",
+            "imgUrl": "img/datamatic.io.png",
+            "imgAlt": "Datamatic.io",
+            "name": "Datamatic",
+            "url": "http://datamatic.io",
+            "desc": "Editable data visualizations for the web - pick a data visualization template, customize it, and publish on your website.",
+            "tags": "Riot, data visualizations, datamatic, infographic"
+        },
+        {
+            "id": "17",
+            "imgUrl": "img/project-lingviny.png",
+            "imgAlt": "Lingviny",
+            "name": "Lingviny",
+            "url": "https://lingviny.com/translators/",
+            "desc": "Lingviny helps professional translators work flexible hours and earn money doing what they love",
+            "tags": "Riot, lingviny, riot-route, app"
+        },
+        {
+            "id": "18",
+            "imgUrl": "img/holdmyticket.png",
+            "imgAlt": "HoldMyTicket",
+            "name": "HoldMyTicket",
+            "url": "https://holdmyticket.com",
+            "desc": "Complete ticketing solution for event organizers.",
+            "tags": "Riot, events, holdmytickt, tickets, sales, point of sales"
+        },
+        {
+            "id": "19",
+            "imgUrl": "img/project-tomorrow-finance.png",
+            "imgAlt": "Tomorrow Finance",
+            "name": "Tomorrow Finance",
+            "url": "https://www.tomorrowfinance.com.au/",
+            "desc": "Instantly compare your home loan options in the Australian market",
+            "tags": "Riot, Typescript, Riot-TS, Laravel, Elixir",
+            "author": {
+                "name": "Simon Douglas",
+                "url": "http://simondouglas.com"
+            }
+        },
+        {
+            "id": "20",
+            "imgUrl": "img/project-dripcap.jpg",
+            "imgAlt": "Dripcap",
+            "name": "Dripcap",
+            "url": "https://github.com/dripcap/dripcap",
+            "desc": "Dripcap is a modern packet analyzer based on Electron",
+            "tags": "Riot, Electron, Node.js, network, pcap",
+            "author": {
+                "name": "Ron Hashimoto",
+                "url": "https://github.com/h2so5"
+            }
+        },
+        {
+          "id": "21",
+          "imgUrl": "img/txrxlabs-org-screenshot.jpg",
+            "imgAlt": "TXRX Labs",
+            "name": "TXRX Labs",
+            "url": "https://txrxlabs.org/",
+            "desc": "Non-profit makerspace dedicated to education and making cool stuff.",
+            "tags": "Riot, Django, Unrest",
+            "author": {
+                "name": "Chris Cauley",
+                "url": "https://github.com/chriscauley/"
+            }
+        },
+        {
+          "id": "22",
+          "imgUrl": "img/veglings.jpg",
+          "imgAlt": "Veglings",
+          "name": "Veglings",
+          "url": "https://veglings.com",
+          "desc": "The Vegan Social Network. Recipes, restaurants, travel, fashion, news etc for a plant-based lifestyle.",
+          "tags": "Riot, Vegan, Recipes, Travel, News, Social, SocialNetwork, PlantBased"
+        },
+        {
+            "id": "23",
+            "imgUrl": "img/wwdjapan.jpg",
+            "imgAlt": "WWD JAPAN.com",
+            "name": "WWD JAPAN.com",
+            "url": "https://www.wwdjapan.com",
+            "desc": "Fashion News Media WWD's Japanese version website",
+            "tags": "Riot, Serverless"
+        },
+        {
+            "id": "24",
+            "imgUrl": "img/project-taxipixi.jpg",
+            "imgAlt": "TaxiPixi",
+            "name": "TaxiPixi",
+            "url": "https://www.TaxiPixi.com",
+            "desc": "Taxi booking application which assign car that best suits for your needs",
+            "tags": "Riot, Ruby"
+        },
+        {
+            "id": "25",
+            "imgUrl": "img/project-webbyjam.png",
+            "imgAlt": "WebbyJam",
+            "name": "WebbyJam",
+            "url": "http://www.webbyjam.com",
+            "desc": "Web application based on web audio API. Users can edit and share short tunes.",
+            "tags": "Riot, Python, Web Audio API"
+        },
+        {
+            "id": "26",
+            "imgUrl": "img/project-cryptoholder.png",
+            "imgAlt": "CryptoHolder",
+            "name": "CryptoHolder",
+            "url": "https://app.cryptoholder.com",
+            "desc": "A Progressive Web App that lets you choose between 700+ cryptocurrencies and follow their prices in real-time, from desktop or smartphone. For free.",
+            "tags": "Riot, REST, API, PWA, App, Mobile",
+            "author": {
+                "name": "Claudio Holanda",
+                "url": "https://github.com/kazzkiq/"
+            }
+        },
+        {
+            "id": "27",
+            "imgUrl": "img/project-climate-lab.jpg",
+            "imgAlt": "Climate Lab",
+            "name": "Climate Lab",
+            "url": "https://climate-lab.eu/",
+            "desc": "A carbon footprint web app focused on taking action and tackling climate change.",
+            "tags": "Riot, Climate Change, Clean Energy, Consumer Action, Materialize CSS",
+            "author": {
+                "name": "Gaspard Benoit",
+                "url": "https://plus.google.com/u/0/110144125752918683436"
+            }
+        },
+        {
+          "id": "28",
+          "imgUrl": "img/misskey.jpg",
+            "imgAlt": "Misskey",
+            "name": "Misskey",
+            "url": "https://misskey.xyz",
+            "desc": "A Twitter like SNS.",
+            "tags": "Riot, SNS",
+            "author": {
+                "name": "syuilo",
+                "url": "https://syuilo.com/"
+            }
+        },
+        {
+          "id": "29",
+          "imgUrl": "img/project-writetotheuniverse.jpg",
+            "imgAlt": "WriteToTheUniverse",
+            "name": "Write To The Universe",
+            "url": "https://WriteToTheUniverse.com",
+            "desc": "An anonymous and ephemeral messaging system that allows you to be yourself",
+            "tags": "Riot, Redux, Creative Writing, Anonymous, messaging system",
+            "author": {
+                "name": "Francesco Sirocco",
+                "url": "https://www.writetotheuniverse.com/contacts"
+            }
+        },
+        {
+          "id": "30",
+          "imgUrl": "img/outline.png",
+            "imgAlt": "Outline",
+            "name": "Outline",
+            "url": "https://outline.com",
+            "desc": "Outline is a free service that makes websites more readable.",
+            "tags": "Riot, Redux, Python, Flask, Lambda, Tools",
+            "author": {
+                "name": "chilldude",
+                "url": "https://github.com/chilldude"
+            }
+        },
+        {
+            "id": "31",
+            "imgUrl": "img/project-magicalmeet.png",
+            "imgAlt": "MagicalMeet",
+            "name": "MagicalMeet",
+            "url": "https://magicalmeet.com",
+            "desc": "MagicalMeet is a startup that pushes the limit of Internet-based communications. We create virtual presence applications for productivity and entertainment.",
+            "tags": "Riot, WebRTC, Communications, Productivity, Entertainment"
+        },
+        {
+            "id": "32",
+            "imgUrl": "img/oddswizz-com.png",
+            "imgAlt": "OddsWizz.com",
+            "name": "OddWizz Football Stats",
+            "url": "https://www.oddswizz.com",
+            "desc": "OddWizz provides unique football stats that are simple and actionable for the most important European national leagues.",
+            "tags": "Riot, SVG, Boostrap, charts, statistics, visualization"
+        }
+	,
+        {
+            "id": "33",
+            "imgUrl": "img/ultranote-online.jpg",
+            "imgAlt": "mywallet.ultranote.org",
+            "name": "UltraNote Online Wallet",
+            "url": "https://mywallet.ultranote.org",
+            "desc": "UltraNote is a decentralized privacy protected blockchain platform With instant untraceable encrypted messages, Secure CPU efficient ASIC resistant mining. Blockchain deposits with interest.",
+            "tags": "Riot, Finance, webpack, socket.io, blockchain"
+        },
+        {
+            "id": "34",
+            "imgUrl": "img/project-viron.jpg",
+            "imgAlt": "Viron",
+            "name": "Viron",
+            "url": "https://cam-inc.github.io/viron-doc",
+            "desc": "Viron is a Automated Design-based Management Console. All you need to do is just create a API server and a OAS2.0 json file. Then viron admin tool is ready to use. You don't need to write frontend code!",
+            "tags": "Riot, dashboard, swagger, oas, admin, admin-dashboard, admin-tools"
+        },
+        {
+            "id": "35",
+            "imgUrl": "img/destinyexotics-com.jpg",
+            "imgAlt": "Destiny Exotics",
+            "name": "DestinyExotics.com",
+            "url": "https://destinyexotics.com",
+            "desc": "Destiny Exotics is creating the ultimate collection resource for Destiny players.",
+            "tags": "Riot, SVG, Python, Flask, REST API"
+        },
+        {
+            "id": "36",
+            "imgUrl": "img/cacoo.png",
+            "imgAlt": "Cacoo",
+            "name": "Cacoo",
+            "url": "https://cacoo.com",
+            "desc": "Cacoo is online diagram software to create and securely share flowcharts, wireframes, UML models, network diagram and more. Over 2.5 million users. Start with a Free account!",
+            "tags": "riot, diagram, collaboration"
+        },
+        {
+            "id": "37",
+            "imgUrl": "img/app-cosmic-everyday.jpg",
+            "imgAlt": "Cosmic Everyday",
+            "name": "Cosmic Everyday",
+            "url": "https://comigo.itch.io/cosmic-everyday",
+            "desc": "Cosmic Everyday is an all-in-one desktop app to make the process of creating your personal projects spectacular. It encourages creativity and allows you to make better content by maximizing your productivity.",
+            "tags": "riot, app, stylus, pug, productivity, organizer, tasks, calendar, time tracking"
+        },
+        {
+            "id": "38",
             "imgUrl": "img/project-yourskilltest.jpg",
             "imgAlt": "Your Skill Test",
             "name": "Your Skill Test",
