@@ -115,6 +115,19 @@
                 "name": "Luke Edwards",
                 "url": "https://lukeed.com"
             }
+        },
+        {
+            "id": "12",
+            "imgUrl": "img/project-yourskilltest.jpg",
+            "imgAlt": "Your Skill Test",
+            "name": "Your Skill Test",
+            "url": "https://yourskilltest.com",
+            "desc": "YourSkillTest is the best place for you to assess your own skills, get recognition for your expertise, and promote yourself to the best employers out there. You will gain access to a vast diversity of tailored exams and the opportunity to join a community of talents that share the same passion. Human Resource is the most valuable resource of an organization. YourSkillTest is a powerful tool that helps you identify the right talent for your organization and accurately assess your candidates' skills, enabling you as an employer, to save a tremendous amount of time, money, and efforts. ",
+            "tags": "Riot, Bootstrap, Test online, your skill test, kiểm tra kỹ năng, phỏng vấn, IT Programming",
+            "author": {
+                "name": "Septeni Technology",
+                "url": "http://septeni-technology.jp/"
+            }
         }
     ]
 }
