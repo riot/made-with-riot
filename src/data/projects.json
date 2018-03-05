@@ -399,6 +399,15 @@
             "url": "https://the-tournament.jp",
             "desc": "An overwhelmingly easy-to-use, fixed version of a free tournament table making tool! You can easily create fashionable tournament tables with web browser alone.",
             "tags": "Riot, The Tournament, Tools"
+        },
+        {
+            "id": "40",
+            "imgUrl": "img/project-raiot.png",
+            "imgAlt": "Raiot",
+            "name": "Raiot",
+            "url": "https://raiot.net",
+            "desc": "Illustration SNS that develops with the goal of 'It can be simple and easy to post like Twitter' and 'Can be used by anyone in the world'.",
+            "tags": "Riot, Raiot, SNS, illustration"
         }
     ]
 }
