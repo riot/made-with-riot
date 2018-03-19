@@ -408,6 +408,15 @@
             "url": "https://raiot.net",
             "desc": "Illustration SNS that develops with the goal of 'It can be simple and easy to post like Twitter' and 'Can be used by anyone in the world'.",
             "tags": "Riot, Raiot, SNS, illustration"
+        },
+        {
+            "id": "41",
+            "imgUrl": "img/project-knowbuild.jpg",
+            "imgAlt": "knowbuild",
+            "name": "knowbuild",
+            "url": "https://knowbuild.biz",
+            "desc": "\"knowbuild\" is a SaaS-based platform that helps businesses in providing solution to manage training programs for employees by specializing in video distribution. knowbuild can also be considered as a modern e-learning system. Simple, new, and easy to use, knowbuild is gaining popularity and very well received all over Japan.  Thanks to RiotJS we were abe to deliver and develop knowbuild in no time!",
+            "tags": "riot, video, e-learning, training, lms, rails"
         }
     ]
 }
