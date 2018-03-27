@@ -417,6 +417,15 @@
             "url": "https://knowbuild.biz",
             "desc": "\"knowbuild\" is a SaaS-based platform that helps businesses in providing solution to manage training programs for employees by specializing in video distribution. knowbuild can also be considered as a modern e-learning system. Simple, new, and easy to use, knowbuild is gaining popularity and very well received all over Japan.  Thanks to RiotJS we were abe to deliver and develop knowbuild in no time!",
             "tags": "riot, video, e-learning, training, lms, rails"
+        },
+        {
+            "id": "41",
+            "imgUrl": "img/jsfightclub.png",
+            "imgAlt": "JS Fight Club",
+            "name": "JS Fight Club",
+            "url": "https://jsfight.club",
+            "desc": "Create an AI-controlled hero using JavaScript and help your team to win the battle!",
+            "tags": "Riot, AI, JavaScript, Game"
         }
     ]
 }
