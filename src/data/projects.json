@@ -341,6 +341,91 @@
             "url": "https://mywallet.ultranote.org",
             "desc": "UltraNote is a decentralized privacy protected blockchain platform With instant untraceable encrypted messages, Secure CPU efficient ASIC resistant mining. Blockchain deposits with interest.",
             "tags": "Riot, Finance, webpack, socket.io, blockchain"
+        },
+        {
+            "id": "34",
+            "imgUrl": "img/project-viron.jpg",
+            "imgAlt": "Viron",
+            "name": "Viron",
+            "url": "https://cam-inc.github.io/viron-doc",
+            "desc": "Viron is a Automated Design-based Management Console. All you need to do is just create a API server and a OAS2.0 json file. Then viron admin tool is ready to use. You don't need to write frontend code!",
+            "tags": "Riot, dashboard, swagger, oas, admin, admin-dashboard, admin-tools"
+        },
+        {
+            "id": "35",
+            "imgUrl": "img/destinyexotics-com.jpg",
+            "imgAlt": "Destiny Exotics",
+            "name": "DestinyExotics.com",
+            "url": "https://destinyexotics.com",
+            "desc": "Destiny Exotics is creating the ultimate collection resource for Destiny players.",
+            "tags": "Riot, SVG, Python, Flask, REST API"
+        },
+        {
+            "id": "36",
+            "imgUrl": "img/cacoo.png",
+            "imgAlt": "Cacoo",
+            "name": "Cacoo",
+            "url": "https://cacoo.com",
+            "desc": "Cacoo is online diagram software to create and securely share flowcharts, wireframes, UML models, network diagram and more. Over 2.5 million users. Start with a Free account!",
+            "tags": "riot, diagram, collaboration"
+        },
+        {
+            "id": "37",
+            "imgUrl": "img/app-cosmic-everyday.jpg",
+            "imgAlt": "Cosmic Everyday",
+            "name": "Cosmic Everyday",
+            "url": "https://comigo.itch.io/cosmic-everyday",
+            "desc": "Cosmic Everyday is an all-in-one desktop app to make the process of creating your personal projects spectacular. It encourages creativity and allows you to make better content by maximizing your productivity.",
+            "tags": "riot, app, stylus, pug, productivity, organizer, tasks, calendar, time tracking"
+        },
+        {
+            "id": "38",
+            "imgUrl": "img/project-yourskilltest.jpg",
+            "imgAlt": "Your Skill Test",
+            "name": "Your Skill Test",
+            "url": "https://yourskilltest.com",
+            "desc": "YourSkillTest is the best place for you to assess your own skills, get recognition for your expertise, and promote yourself to the best employers out there. You will gain access to a vast diversity of tailored exams and the opportunity to join a community of talents that share the same passion. Human Resource is the most valuable resource of an organization. YourSkillTest is a powerful tool that helps you identify the right talent for your organization and accurately assess your candidates' skills, enabling you as an employer, to save a tremendous amount of time, money, and efforts. ",
+            "tags": "Riot, Bootstrap, Test online, your skill test, kiểm tra kỹ năng, phỏng vấn, IT Programming",
+            "author": {
+                "name": "Septeni Technology",
+                "url": "http://septeni-technology.jp/"
+            }
+        },
+        {
+            "id": "39",
+            "imgUrl": "img/project-tournament.png",
+            "imgAlt": "The Tournament",
+            "name": "The Tournament",
+            "url": "https://the-tournament.jp",
+            "desc": "An overwhelmingly easy-to-use, fixed version of a free tournament table making tool! You can easily create fashionable tournament tables with web browser alone.",
+            "tags": "Riot, The Tournament, Tools"
+        },
+        {
+            "id": "40",
+            "imgUrl": "img/project-raiot.png",
+            "imgAlt": "Raiot",
+            "name": "Raiot",
+            "url": "https://raiot.net",
+            "desc": "Illustration SNS that develops with the goal of 'It can be simple and easy to post like Twitter' and 'Can be used by anyone in the world'.",
+            "tags": "Riot, Raiot, SNS, illustration"
+        },
+        {
+            "id": "41",
+            "imgUrl": "img/project-knowbuild.jpg",
+            "imgAlt": "knowbuild",
+            "name": "knowbuild",
+            "url": "https://knowbuild.biz",
+            "desc": "\"knowbuild\" is a SaaS-based platform that helps businesses in providing solution to manage training programs for employees by specializing in video distribution. knowbuild can also be considered as a modern e-learning system. Simple, new, and easy to use, knowbuild is gaining popularity and very well received all over Japan.  Thanks to RiotJS we were abe to deliver and develop knowbuild in no time!",
+            "tags": "riot, video, e-learning, training, lms, rails"
+        },
+        {
+            "id": "41",
+            "imgUrl": "img/jsfightclub.png",
+            "imgAlt": "JS Fight Club",
+            "name": "JS Fight Club",
+            "url": "https://jsfight.club",
+            "desc": "Create an AI-controlled hero using JavaScript and help your team to win the battle!",
+            "tags": "Riot, AI, JavaScript, Game"
         }
     ]
 }
