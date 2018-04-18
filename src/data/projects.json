@@ -426,6 +426,15 @@
             "url": "https://jsfight.club",
             "desc": "Create an AI-controlled hero using JavaScript and help your team to win the battle!",
             "tags": "Riot, AI, JavaScript, Game"
+        },
+        {
+            "id": "42",
+            "imgUrl": "img/nikamail.png",
+            "imgAlt": "NikaMail",
+            "name": "NikaMail",
+            "url": "https://nika.run",
+            "desc": "NikaMail is portable, zero-config, extendable email server managed through a Web Interface. NikaMail can work as a mail exchange server (port 25), mail transfer agent (port 587), and it can provide access to mailboxes (port 110). It supports StartTLS encryption and DKIM for outgoing emails.",
+            "tags": "Riot, MDL, SweetAlert, E-Mail Server, Dashboard, Control Panel "
         }
     ]
 }
