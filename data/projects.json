@@ -435,6 +435,15 @@
             "url": "https://nika.run",
             "desc": "NikaMail is portable, zero-config, extendable email server managed through a Web Interface. NikaMail can work as a mail exchange server (port 25), mail transfer agent (port 587), and it can provide access to mailboxes (port 110). It supports StartTLS encryption and DKIM for outgoing emails.",
             "tags": "Riot, MDL, SweetAlert, E-Mail Server, Dashboard, Control Panel "
+        },
+        {
+            "id": "43",
+            "imgUrl": "img/riot-showcase-matchit.jpg",
+            "imgAlt": "Match It",
+            "name": "Match It",
+            "url": "https://funcards.github.io/match-it/",
+            "desc": "Online card game generator",
+            "tags": "Riot, playing, cards, game, generator"
         }
     ]
 }
