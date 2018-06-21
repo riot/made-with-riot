@@ -444,6 +444,15 @@
             "url": "https://funcards.github.io/match-it/",
             "desc": "Online card game generator",
             "tags": "Riot, playing, cards, game, generator"
+        },
+        {
+            "id": "44",
+            "imgUrl": "img/amitkumargupta.work_riot.jpg",
+            "imgAlt": "Amit Kumar Gupta Portfolio",
+            "name": "amitkumargupta.work",
+            "url": "https://amitkumargupta.work",
+            "desc": "Personal portfolio",
+            "tags": "amit, amitkumargupta, portfolio"
         }
     ]
 }
