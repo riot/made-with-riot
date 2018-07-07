@@ -453,6 +453,15 @@
             "url": "https://amitkumargupta.work",
             "desc": "Personal portfolio",
             "tags": "amit, amitkumargupta, portfolio"
+        },
+        {
+            "id": "45",
+            "imgUrl": "img/imblabv2.jpg",
+            "imgAlt": "Imglab - image annotation tool",
+            "name": "Imglab",
+            "url": "https://naturalintelligence.github.io/imglab/",
+            "desc": "Online Image Annotation Tool with landmarks and auto annotation using plugins",
+            "tags": "dlib, imglab, annotation, machine learning, fast++, "
         }
     ]
 }
