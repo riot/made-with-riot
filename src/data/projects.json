@@ -471,6 +471,15 @@
         	"url": "https://www.authblue.com",
         	"desc": "Authblue helps in finding the right background check company in India. Our customers can compare offerings from handpicked verifiers and place orders instantly with all the right information,unbiased comparisons. Our marketplace offers a seamless online shopping experience for Background Verification.",
         	"tags": "Riot,Background check Marketplace in India,Background verification Marketplace in India, Background check India, Background verification India"
+        },
+        {
+        	"id": "47",
+        	"imgUrl": "img/project-antos.png",
+        	"imgAlt": "AntOS - a client core API that enables desktop like experience to remote server resource acessing using web technologies",
+        	"name": "AntOS",
+        	"url": "https://os.lxsang.me/",
+        	"desc": "Server or Embedded Linux are often headless, so accessing the resource on these systems is not always obvious. The aim of this project is to provides a client core API that enables desktop-like experience to resource acessing on remote server using web technologies. AntOS is based on jQuery and Riot. The API defines the core UI, system calls (to server), Virtual File system, virtual database and the necessary libraries for easing the development of Webdesktop's applications. Applications can be developped with coffee/javascript/css without the need of a server side script.",
+        	"tags": "Riot,Webdesktop, API, UI, VFS, VDB"
         }
     ]
 }
