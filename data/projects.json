@@ -480,6 +480,15 @@
         	"url": "https://os.lxsang.me/",
         	"desc": "Server or Embedded Linux are often headless, so accessing the resource on these systems is not always obvious. The aim of this project is to provides a client core API that enables desktop-like experience to resource acessing on remote server using web technologies. AntOS is based on jQuery and Riot. The API defines the core UI, system calls (to server), Virtual File system, virtual database and the necessary libraries for easing the development of Webdesktop's applications. Applications can be developped with coffee/javascript/css without the need of a server side script.",
         	"tags": "Riot,Webdesktop, API, UI, VFS, VDB"
+        },
+        {
+        	"id": "48",
+        	"imgUrl": "img/clerado-jobs.jpg",
+        	"imgAlt": "Job search engine, fastest and most simple to use job finder",
+        	"name": "clerado",
+        	"url": "https://www.clerado.de",
+        	"desc": "clerado is a lightweight, very fast job finder with a familar and decent clean user interface. For those people who just want to display vacancies.",
+        	"tags": "jobs, career, seach, job finder"
         }
     ]
 }
