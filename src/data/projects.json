@@ -489,6 +489,15 @@
         	"url": "https://www.clerado.de",
         	"desc": "clerado is a lightweight, very fast job finder with a familar and decent clean user interface. For those people who just want to display vacancies.",
         	"tags": "jobs, career, seach, job finder"
+        },
+        {
+            "id": "49",
+            "imgUrl": "img/app-ctjs.jpg",
+            "imgAlt": "ct.js — A free 2D game editor",
+            "name": "ct.js",
+            "url": "http://ctjs.rocks/",
+            "desc": "ct.js aims to make learning programming fun and game development easy by its visual editors and well-documented code library. It is available for Windows, Linux, and Mac.",
+            "tags": "riot, app, stylus, pug, programming, gamedev, html5, javascript, 2D, game editor"
         }
     ]
 }
