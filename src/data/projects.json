@@ -377,6 +377,118 @@
             "url": "https://comigo.itch.io/cosmic-everyday",
             "desc": "Cosmic Everyday is an all-in-one desktop app to make the process of creating your personal projects spectacular. It encourages creativity and allows you to make better content by maximizing your productivity.",
             "tags": "riot, app, stylus, pug, productivity, organizer, tasks, calendar, time tracking"
+        },
+        {
+            "id": "38",
+            "imgUrl": "img/project-yourskilltest.jpg",
+            "imgAlt": "Your Skill Test",
+            "name": "Your Skill Test",
+            "url": "https://yourskilltest.com",
+            "desc": "YourSkillTest is the best place for you to assess your own skills, get recognition for your expertise, and promote yourself to the best employers out there. You will gain access to a vast diversity of tailored exams and the opportunity to join a community of talents that share the same passion. Human Resource is the most valuable resource of an organization. YourSkillTest is a powerful tool that helps you identify the right talent for your organization and accurately assess your candidates' skills, enabling you as an employer, to save a tremendous amount of time, money, and efforts. ",
+            "tags": "Riot, Bootstrap, Test online, your skill test, kiểm tra kỹ năng, phỏng vấn, IT Programming",
+            "author": {
+                "name": "Septeni Technology",
+                "url": "http://septeni-technology.jp/"
+            }
+        },
+        {
+            "id": "39",
+            "imgUrl": "img/project-tournament.png",
+            "imgAlt": "The Tournament",
+            "name": "The Tournament",
+            "url": "https://the-tournament.jp",
+            "desc": "An overwhelmingly easy-to-use, fixed version of a free tournament table making tool! You can easily create fashionable tournament tables with web browser alone.",
+            "tags": "Riot, The Tournament, Tools"
+        },
+        {
+            "id": "40",
+            "imgUrl": "img/project-raiot.png",
+            "imgAlt": "Raiot",
+            "name": "Raiot",
+            "url": "https://raiot.net",
+            "desc": "Illustration SNS that develops with the goal of 'It can be simple and easy to post like Twitter' and 'Can be used by anyone in the world'.",
+            "tags": "Riot, Raiot, SNS, illustration"
+        },
+        {
+            "id": "41",
+            "imgUrl": "img/project-knowbuild.jpg",
+            "imgAlt": "knowbuild",
+            "name": "knowbuild",
+            "url": "https://knowbuild.biz",
+            "desc": "\"knowbuild\" is a SaaS-based platform that helps businesses in providing solution to manage training programs for employees by specializing in video distribution. knowbuild can also be considered as a modern e-learning system. Simple, new, and easy to use, knowbuild is gaining popularity and very well received all over Japan.  Thanks to RiotJS we were abe to deliver and develop knowbuild in no time!",
+            "tags": "riot, video, e-learning, training, lms, rails"
+        },
+        {
+            "id": "42",
+            "imgUrl": "img/jsfightclub.png",
+            "imgAlt": "JS Fight Club",
+            "name": "JS Fight Club",
+            "url": "https://jsfight.club",
+            "desc": "Create an AI-controlled hero using JavaScript and help your team to win the battle!",
+            "tags": "Riot, AI, JavaScript, Game"
+        },
+        {
+            "id": "43",
+            "imgUrl": "img/nikamail.png",
+            "imgAlt": "NikaMail",
+            "name": "NikaMail",
+            "url": "https://nika.run",
+            "desc": "NikaMail is portable, zero-config, extendable email server managed through a Web Interface. NikaMail can work as a mail exchange server (port 25), mail transfer agent (port 587), and it can provide access to mailboxes (port 110). It supports StartTLS encryption and DKIM for outgoing emails.",
+            "tags": "Riot, MDL, SweetAlert, E-Mail Server, Dashboard, Control Panel "
+        },
+        {
+            "id": "44",
+            "imgUrl": "img/riot-showcase-matchit.jpg",
+            "imgAlt": "Match It",
+            "name": "Match It",
+            "url": "https://funcards.github.io/match-it/",
+            "desc": "Online card game generator",
+            "tags": "Riot, playing, cards, game, generator"
+        },
+        {
+            "id": "44",
+            "imgUrl": "img/amitkumargupta.work_riot.jpg",
+            "imgAlt": "Amit Kumar Gupta Portfolio",
+            "name": "amitkumargupta.work",
+            "url": "https://amitkumargupta.work",
+            "desc": "Personal portfolio",
+            "tags": "amit, amitkumargupta, portfolio"
+        },
+        {
+            "id": "45",
+            "imgUrl": "img/imblabv2.jpg",
+            "imgAlt": "Imglab - image annotation tool",
+            "name": "Imglab",
+            "url": "https://naturalintelligence.github.io/imglab/",
+            "desc": "Online Image Annotation Tool with landmarks and auto annotation using plugins",
+            "tags": "dlib, imglab, annotation, machine learning, fast++, "
+        },
+        {
+        	"id": "46",
+        	"imgUrl": "img/authblue.jpg",
+        	"imgAlt": "Authblue - Simple, Reliable And Affordable Background Verifications in India, Where you compare and order online from India's leading verifiers",
+        	"name": "AuthBlue",
+        	"url": "https://www.authblue.com",
+        	"desc": "Authblue helps in finding the right background check company in India. Our customers can compare offerings from handpicked verifiers and place orders instantly with all the right information,unbiased comparisons. Our marketplace offers a seamless online shopping experience for Background Verification.",
+        	"tags": "Riot,Background check Marketplace in India,Background verification Marketplace in India, Background check India, Background verification India"
+        },
+        {
+        	"id": "47",
+        	"imgUrl": "img/project-antos.png",
+        	"imgAlt": "AntOS - a client core API that enables desktop like experience to remote server resource acessing using web technologies",
+        	"name": "AntOS",
+        	"url": "https://os.lxsang.me/",
+        	"desc": "Server or Embedded Linux are often headless, so accessing the resource on these systems is not always obvious. The aim of this project is to provides a client core API that enables desktop-like experience to resource acessing on remote server using web technologies. AntOS is based on jQuery and Riot. The API defines the core UI, system calls (to server), Virtual File system, virtual database and the necessary libraries for easing the development of Webdesktop's applications. Applications can be developped with coffee/javascript/css without the need of a server side script.",
+        	"tags": "Riot,Webdesktop, API, UI, VFS, VDB"
+        },
+        {
+        	"id": "48",
+        	"imgUrl": "img/clerado-jobs.jpg",
+        	"imgAlt": "Job search engine, fastest and most simple to use job finder",
+        	"name": "clerado",
+        	"url": "https://www.clerado.de",
+        	"desc": "clerado is a lightweight, very fast job finder with a familar and decent clean user interface. For those people who just want to display vacancies.",
+        	"tags": "jobs, career, seach, job finder"
         }
     ]
 }
