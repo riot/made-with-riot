@@ -464,31 +464,40 @@
             "tags": "dlib, imglab, annotation, machine learning, fast++, "
         },
         {
-        	"id": "46",
-        	"imgUrl": "img/authblue.jpg",
-        	"imgAlt": "Authblue - Simple, Reliable And Affordable Background Verifications in India, Where you compare and order online from India's leading verifiers",
-        	"name": "AuthBlue",
-        	"url": "https://www.authblue.com",
-        	"desc": "Authblue helps in finding the right background check company in India. Our customers can compare offerings from handpicked verifiers and place orders instantly with all the right information,unbiased comparisons. Our marketplace offers a seamless online shopping experience for Background Verification.",
-        	"tags": "Riot,Background check Marketplace in India,Background verification Marketplace in India, Background check India, Background verification India"
+            "id": "46",
+            "imgUrl": "img/authblue.jpg",
+            "imgAlt": "Authblue - Simple, Reliable And Affordable Background Verifications in India, Where you compare and order online from India's leading verifiers",
+            "name": "AuthBlue",
+            "url": "https://www.authblue.com",
+            "desc": "Authblue helps in finding the right background check company in India. Our customers can compare offerings from handpicked verifiers and place orders instantly with all the right information,unbiased comparisons. Our marketplace offers a seamless online shopping experience for Background Verification.",
+            "tags": "Riot,Background check Marketplace in India,Background verification Marketplace in India, Background check India, Background verification India"
         },
         {
-        	"id": "47",
-        	"imgUrl": "img/project-antos.png",
-        	"imgAlt": "AntOS - a client core API that enables desktop like experience to remote server resource acessing using web technologies",
-        	"name": "AntOS",
-        	"url": "https://os.lxsang.me/",
-        	"desc": "Server or Embedded Linux are often headless, so accessing the resource on these systems is not always obvious. The aim of this project is to provides a client core API that enables desktop-like experience to resource acessing on remote server using web technologies. AntOS is based on jQuery and Riot. The API defines the core UI, system calls (to server), Virtual File system, virtual database and the necessary libraries for easing the development of Webdesktop's applications. Applications can be developped with coffee/javascript/css without the need of a server side script.",
-        	"tags": "Riot,Webdesktop, API, UI, VFS, VDB"
+            "id": "47",
+            "imgUrl": "img/project-antos.png",
+            "imgAlt": "AntOS - a client core API that enables desktop like experience to remote server resource acessing using web technologies",
+            "name": "AntOS",
+            "url": "https://os.lxsang.me/",
+            "desc": "Server or Embedded Linux are often headless, so accessing the resource on these systems is not always obvious. The aim of this project is to provides a client core API that enables desktop-like experience to resource acessing on remote server using web technologies. AntOS is based on jQuery and Riot. The API defines the core UI, system calls (to server), Virtual File system, virtual database and the necessary libraries for easing the development of Webdesktop's applications. Applications can be developped with coffee/javascript/css without the need of a server side script.",
+            "tags": "Riot,Webdesktop, API, UI, VFS, VDB"
         },
         {
-        	"id": "48",
-        	"imgUrl": "img/clerado-jobs.jpg",
-        	"imgAlt": "Job search engine, fastest and most simple to use job finder",
-        	"name": "clerado",
-        	"url": "https://www.clerado.de",
-        	"desc": "clerado is a lightweight, very fast job finder with a familar and decent clean user interface. For those people who just want to display vacancies.",
-        	"tags": "jobs, career, seach, job finder"
+            "id": "48",
+            "imgUrl": "img/clerado-jobs.jpg",
+            "imgAlt": "Job search engine, fastest and most simple to use job finder",
+            "name": "clerado",
+            "url": "https://www.clerado.de",
+            "desc": "clerado is a lightweight, very fast job finder with a familar and decent clean user interface. For those people who just want to display vacancies.",
+            "tags": "jobs, career, seach, job finder"
+        },
+        {
+            "id": "49",
+            "imgUrl": "img/bits-ui.com.png",
+            "imgAlt": "Web User Interface For Fast Development",
+            "name": "bits-ui",
+            "url": "https://bits-ui.com",
+            "desc": "Bits UI is designed for ease of use and works well with other javascript libraries. It encapsulates all complexities inside to let you focus on important things.",
+            "tags": "Components, UI, Riot, Framework, Javascript"
         }
     ]
 }
