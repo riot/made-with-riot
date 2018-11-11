@@ -507,6 +507,15 @@
             "url": "https://bits-ui.com",
             "desc": "Bits UI is designed for ease of use and works well with other javascript libraries. It encapsulates all complexities inside to let you focus on important things.",
             "tags": "Components, UI, Riot, Framework, Javascript"
+        },
+        {
+            "id": "51",
+            "imgUrl": "img/textcritical.png",
+            "imgAlt": "Library of ancient Greek works (and analysis tools)",
+            "name": "textcritical",
+            "url": "https://textcritical.net",
+            "desc": "TextCritical.net is a website that provides ancient Greek texts and useful analysis tools.",
+            "tags": "Riot, Ancient Greek"
         }
     ]
 }
