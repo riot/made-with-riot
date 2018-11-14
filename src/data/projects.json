@@ -516,6 +516,15 @@
             "url": "https://textcritical.net",
             "desc": "TextCritical.net is a website that provides ancient Greek texts and useful analysis tools.",
             "tags": "Riot, Ancient Greek"
-        }
+        },
+        {
+            "id": "52",
+            "imgUrl": "img/bigbit.png",
+            "imgAlt": "BigBit Standard",
+            "name": "BigBit",
+            "url": "https://bigbit.github.io/bigbitjs/",
+            "desc": "Bigbig is a standard for saving any size of numberic data in less space without losing precision. A standard for character encoding to reduce size and simplify selection. This tool help to compare numeric formats with IEEE 754 formats and character encoding with UTF encoding",
+            "tags": "bigbit, utf, float, double, ieee754, binary32, binary64, bignumber, number, data type"
+}
     ]
 }
