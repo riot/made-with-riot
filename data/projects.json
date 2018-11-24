@@ -525,6 +525,15 @@
             "url": "https://bigbit.github.io/bigbitjs/",
             "desc": "Bigbig is a standard for saving any size of numberic data in less space without losing precision. A standard for character encoding to reduce size and simplify selection. This tool help to compare numeric formats with IEEE 754 formats and character encoding with UTF encoding",
             "tags": "bigbit, utf, float, double, ieee754, binary32, binary64, bignumber, number, data type"
-}
+        },
+        {
+            "id": "53",
+            "imgUrl": "img/insightwatch.png",
+            "imgAlt": "insightwatch - Security auditing service for AWS Environments",
+            "name": "insightwatch",
+            "url": "https://insightwatch.io",
+            "desc": "insightwatch is a service for checking that your AWS environment is operating according to security best practices.",
+            "tags": "Riot, Security, AWS"
+        }
     ]
 }
