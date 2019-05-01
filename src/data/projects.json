@@ -534,6 +534,15 @@
             "url": "https://insightwatch.io",
             "desc": "insightwatch is a service for checking that your AWS environment is operating according to security best practices.",
             "tags": "Riot, Security, AWS"
+        },
+        {
+            "id": "54",
+            "imgUrl": "img/stakehex.png",
+            "imgAlt": "StakeHEX - Run simulations of your HEX claims and stakes",
+            "name": "StakeHEX",
+            "url": "https://stakehex.com",
+            "desc": "StakeHEX's HEX Staking Simulator gives you the power to test HEX cryptocurrency staking strategies to evaluate potential returns on your investment.",
+            "tags": "Riot, HEX, Cryptocurrency, Simulator"
         }
     ]
 }
