@@ -25,6 +25,8 @@ npm run start
 
 Then access the application on http://localhost:8000/
 
+`Note`: It doesn't work if it isn't nodejs v8 or less.
+
 ### Development
 
 For developing, simply run the command `gulp watch:all` for automatic re-compiling on file changes.
