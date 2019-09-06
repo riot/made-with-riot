@@ -25,7 +25,7 @@ npm run start
 
 Then access the application on http://localhost:8000/
 
-`Note`: It doesn't work if it isn't nodejs v8 or less.
+`Note`: Required environment is Node.js v11.0.0 over.
 
 ### Development
 
