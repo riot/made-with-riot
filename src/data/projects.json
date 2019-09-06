@@ -544,7 +544,7 @@
             "desc": "StakeHEX's HEX Staking Simulator gives you the power to test HEX cryptocurrency staking strategies to evaluate potential returns on your investment.",
             "tags": "Riot, HEX, Cryptocurrency, Simulator"
         },
-	 {
+	    {
             "id": "55",
             "imgUrl": "img/project-me-riotjs.png",
             "imgAlt": "Personal Portfolio Website",
@@ -552,6 +552,15 @@
             "url": "http://kendallarneaud.me",
             "desc": "The personal portfolio website of Caribbean based web developer Kendall Arneaud",
             "tags": "Riot, Trinidad, Developer, Portfolio"
+        },
+        {
+            "id": "56",
+            "imgUrl": "img/riot_v4_realworld_example_app.png",
+            "imgAlt": "riot_v4_realworld_example_app",
+            "name": "riot_v4_realworld_example_app",
+            "url": "https://github.com/iq3addLi/riot_v4_realworld_example_app",
+            "desc": "Exemplary real world application built with Riot.js v4✊",
+            "tags": "Riot, realworld, example"
         }
     ]
 }
