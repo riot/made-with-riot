@@ -13,7 +13,6 @@ let gulp         =  require('gulp'),
     sass         =  require('gulp-sass'),
     babel        =  require('gulp-babel'),
     riot         =  require('gulp-riot'),
-    runSequence  =  require('run-sequence'),
     connect      =  require('gulp-connect'),
     svgstore     =  require('gulp-svgstore'),
     svgmin       =  require('gulp-svgmin'),
@@ -29,7 +28,7 @@ let opts = {
     path: {
            assets: 'src',
    riotComponents: 'src/js/tags',
-        promiseJs:'node_modules/promise-polyfill/Promise.js',
+        promiseJs: 'node_modules/promise-polyfill/dist/polyfill.min.js',
                js: 'src/js',
            styles: 'src/styles',
             views: 'src/views',
@@ -72,7 +71,24 @@ function handleError(err) {
 
 // Gulp tasks
 
-gulp.task('compile:styles', ['clean:styles'], () => {
+gulp.task('clean:styles', (cb) => {
+    return del(opts.path.distCss, cb);
+});
+
+gulp.task('clean:scripts', (cb) => {
+    return del(opts.path.distJs, cb);
+});
+
+gulp.task('clean:html', (cb) => {
+    return del(opts.path.dist + '/*.html', cb);
+});
+
+gulp.task('clean:data', (cb) => {
+    return del(opts.path.distData + '/*.json', cb);
+});
+
+
+gulp.task('compile:styles', () => {
     return gulp.src([
             opts.path.styles + '/**/*.scss',
             opts.path.styles + '/**/*.css'
@@ -94,14 +110,12 @@ gulp.task('compile:styles', ['clean:styles'], () => {
         .pipe(notify({message: opts.messages.stylesCompiled}));
 });
 
-gulp.task('compile:images', ['compile:svg'], () => {
-    return gulp.src([
-            opts.path.images + '/**',
-            'resources/**'
-        ])
-        .pipe(gulp.dest(opts.path.distImages))
-        .pipe(notify({message: opts.messages.imagesCompiled}));
-});
+gulp.task('make:styles',
+    gulp.series(
+        'clean:styles',
+        'compile:styles'
+    )
+)
 
 gulp.task('compile:svg', () => {
     return gulp.src(opts.path.images + '/*.svg')
@@ -120,6 +134,24 @@ gulp.task('compile:svg', () => {
         .pipe(rename({basename: 'all.min', extname: '.svg'}))
         .pipe(gulp.dest(opts.path.distImages))
 });
+
+gulp.task('compile:images', () => {
+    return gulp.src([
+            opts.path.images + '/**',
+            'resources/**'
+        ])
+        .pipe(gulp.dest(opts.path.distImages))
+        .pipe(notify({message: opts.messages.imagesCompiled}));
+});
+
+
+gulp.task('make:images',
+    gulp.series(
+        'compile:svg',
+        'compile:images'
+    )
+)
+
 
 gulp.task('compile:js', () => {
     return gulp.src([
@@ -160,45 +192,38 @@ gulp.task('compile:data', () => {
 });
 
 
-
-gulp.task('compile:scripts', (cb) => {
-    runSequence(
+gulp.task('compile:scripts',
+    gulp.series(
         'clean:scripts',
         'clean:data',
         'compile:riot',
         'compile:js',
-        'compile:data',
-        cb
-    );
-});
+        'compile:data'
+    )
+);
 
-gulp.task('compile:html', ['clean:html'], () => {
+gulp.task('compile:html', () => {
     return gulp.src(opts.path.assets + '/app.html')
         .pipe(rename({basename: 'index'}))
         .pipe(gulp.dest(opts.path.dist))
         .pipe(notify({message: opts.messages.htmlCompiled}));
 });
 
-gulp.task('compile:all', ['compile:styles', 'compile:scripts', 'compile:html', 'compile:images'], () => {
-    return notify({message: opts.messages.allCompiled});
-});
+gulp.task('make:html',
+    gulp.series(
+        'clean:html',
+        'compile:html'
+    )
+)
 
-gulp.task('clean:styles', (cb) => {
-    return del(opts.path.distCss, cb);
-});
-
-gulp.task('clean:scripts', (cb) => {
-    return del(opts.path.distJs, cb);
-});
-
-gulp.task('clean:html', (cb) => {
-    return del(opts.path.dist + '/*.html', cb);
-});
-
-gulp.task('clean:data', (cb) => {
-    return del(opts.path.distData + '/*.json', cb);
-});
-
+gulp.task('compile:all',
+    gulp.series(
+        'make:styles',
+        'compile:scripts',
+        'make:html',
+        'make:images'
+    )
+)
 gulp.task('lift', () => {
     connect.server({
         root: opts.path.dist,
@@ -217,6 +242,6 @@ gulp.task('deploy', () => {
 gulp.task('watch:all', () => {
     gulp.watch([opts.path.assets + '/styles/**/*.scss', opts.path.assets + 'styles/**/*.css'], ['compile:styles']);
     gulp.watch([opts.path.assets + '/js/**/*.js', opts.path.assets + '/js/**/*.tag.html'], ['compile:scripts']);
-    gulp.watch([opts.path.images + '/**', 'resources/**'], ['compile:images']);
+    gulp.watch([opts.path.images + '/**', 'resources/**'], ['make:images']);
     gulp.watch([opts.path.assets + '/app.html'], ['compile:html']);
 });
