@@ -4,7 +4,7 @@
 // Importing modules
 
 let gulp         =  require('gulp'),
-    minifycss    =  require('gulp-minify-css'),
+    minifycss    =  require('gulp-clean-css'),
     uglify       =  require('gulp-uglify'),
     rename       =  require('gulp-rename'),
     notify       =  require('gulp-notify'),
