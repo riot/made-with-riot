@@ -240,8 +240,8 @@ gulp.task('deploy', () => {
 // Gulp watchers
 
 gulp.task('watch:all', () => {
-    gulp.watch([opts.path.assets + '/styles/**/*.scss', opts.path.assets + 'styles/**/*.css'], ['compile:styles']);
-    gulp.watch([opts.path.assets + '/js/**/*.js', opts.path.assets + '/js/**/*.tag.html'], ['compile:scripts']);
-    gulp.watch([opts.path.images + '/**', 'resources/**'], ['make:images']);
-    gulp.watch([opts.path.assets + '/app.html'], ['compile:html']);
+    gulp.watch([opts.path.assets + '/styles/**/*.css', opts.path.assets + '/styles/**/*.scss'], gulp.task('compile:styles'));
+    gulp.watch([opts.path.assets + '/js/**/*.js', opts.path.assets + '/js/**/*.tag.html'], gulp.task('compile:scripts'));
+    gulp.watch([opts.path.images + '/**', 'resources/**'], gulp.task('make:images'));
+    gulp.watch([opts.path.assets + '/app.html'], gulp.task('compile:html'));
 });

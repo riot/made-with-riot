@@ -29,9 +29,10 @@
   },
   "scripts": {
     "test": "",
+    "dev": "gulp watch:all",
     "deploy": "gulp deploy",
     "build": "gulp compile:all",
-    "start": "gulp lift"
+    "start": "npm run build && gulp lift"
   },
   "repository": {
     "type": "git",
