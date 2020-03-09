@@ -561,6 +561,15 @@
             "url": "https://github.com/iq3addLi/riot_v4_realworld_example_app",
             "desc": "Exemplary real world application built with Riot.js v4✊",
             "tags": "Riot, realworld, example"
+        },
+        {
+            "id": "57",
+            "imgUrl": "img/project-graphjs.jpg",
+            "imgAlt": "GraphJS - Social Widgets for your App/Website",
+            "name": "GraphJS",
+            "url": "https://graphjs.com",
+            "desc": "Common social feastures (such as, forum, authentication, blog, member profiles, star ratings) for your website, made as simple as adding a line of HTML tag to your website. Powered by Riot.js. Ideal for static website generators like Jekyll. Comes with robust API for further customization.",
+            "tags": "Social, Widgets, Forum, Authentication"
         }
     ]
 }
