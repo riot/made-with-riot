@@ -126,7 +126,11 @@ gulp.task('compile:svg', () => {
                     cleanupIDs: {
                         prefix: prefix + '-',
                         minify: true
-                    }
+                    },
+                }, {
+                    removeDimensions: false
+                }, {
+                    removeViewBox: false
                 }]
             }
         }))
