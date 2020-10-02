@@ -578,6 +578,15 @@
             "url": "https://esml.fi",
             "desc": "Website for ESML - Esports SM-liiga (Finnish National Esports League).",
             "tags": "esports, Riot, website, html, css, javascript"
+        },
+        {
+            "id": "59",
+            "imgUrl": "img/pizza-cartel.jpg",
+            "imgAlt": "Pizza Cartel - The Best Damn Pizza Around",
+            "name": "Pizza Cartel",
+            "url": "https://pizzacartel.fi",
+            "desc": "Website (incl. order tracking, admin dashboard, etc.) for Pizza Cartel",
+            "tags": "pizza, Hapi, Riot, website, html, css, javascript"
         }
     ]
 }
