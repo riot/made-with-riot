@@ -578,6 +578,28 @@
             "url": "https://esml.fi",
             "desc": "Website for ESML - Esports SM-liiga (Finnish National Esports League).",
             "tags": "esports, Riot, website, html, css, javascript"
+        },
+        {
+            "id": "59",
+            "imgUrl": "img/pizza-cartel.jpg",
+            "imgAlt": "Pizza Cartel - The Best Damn Pizza Around",
+            "name": "Pizza Cartel",
+            "url": "https://pizzacartel.fi",
+            "desc": "Website (incl. order tracking, admin dashboard, etc.) for Pizza Cartel",
+            "tags": "pizza, Hapi, Riot, website, html, css, javascript"
+        },
+        {
+            "id": "60",
+            "imgUrl": "img/project-docker-registry-ui.png",
+            "imgAlt": "Docker Registry UI - The simplest and most complete UI for your private registry",
+            "name": "Docker Registry UI",
+            "url": "https://joxit.dev/docker-registry-ui/demo/",
+            "desc": "The simplest and most complete UI for your private registry",
+            "tags": "Docker, Registry, Riot, UI, container",
+            "author": {
+              "name": "Joxit",
+              "url": "https://joxit.dev/"
+          }
         }
     ]
 }
