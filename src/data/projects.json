@@ -600,6 +600,15 @@
               "name": "Joxit",
               "url": "https://joxit.dev/"
           }
+        },
+        {
+            "id": "61",
+            "imgUrl": "img/eggwp.png",
+            "imgAlt": "Eggwp - Prized weekly Diabotical tournaments and more",
+            "name": "Eggwp",
+            "url": "https://eggwp.co",
+            "desc": "Platform to run Diabotical tournaments. Uses Discord bot to handle tournament management.",
+            "tags": "Riot, Tailwind, Discord, website, HTML, CSS, javascript, esports, gaming, tournaments"
         }
     ]
 }
