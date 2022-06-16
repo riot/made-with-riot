@@ -609,6 +609,15 @@
             "url": "https://eggwp.co",
             "desc": "Platform to run Diabotical tournaments. Uses Discord bot to handle tournament management.",
             "tags": "Riot, Tailwind, Discord, website, HTML, CSS, javascript, esports, gaming, tournaments"
+        },
+        {
+            "id": "62",
+            "imgUrl": "img/particles.png",
+            "imgAlt": "Riot Particles - Easily create highly customizable particles, confetti and fireworks animations and use them as animated backgrounds for your website",
+            "name": "Riot Particles",
+            "url": "https://particles.js.org",
+            "desc": "Easily create highly customizable particles, confetti and fireworks animations and use them as animated backgrounds for your website.",
+            "tags": "Riot, particles, website, HTML, CSS, javascript, typescript, confetti, fireworks"
         }
     ]
 }
