@@ -625,7 +625,7 @@
             "imgAlt": "CarboneIO - Generate documents using a JSON and a template (PDF, DOCX, XLS, XLSX, ODT, PPTX, ODS, CSV, XML, HTML, etc...)",
             "name": "Carbone",
             "url": "https://carbone.io",
-            "desc": "The most efficient, low-code, and future-proof reporting solution: Generate documents dynamically from a JSON dataset and a template created from your favourite text editor. RiotJS power the account manager of Carbone Cloud services.",
+            "desc": "The most efficient, low-code, and future-proof reporting solution: Generate documents dynamically from a JSON dataset and a template created from your favourite text editor. RiotJS powers the account manager of Carbone Cloud services.",
             "tags": "open-source, reporting, documents, low-code, pdf, docx, json, report builder, "
         }
     ]
