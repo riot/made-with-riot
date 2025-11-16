@@ -20,7 +20,7 @@
     "gulp-riot": "^1.1.5",
     "gulp-sass": "^5.1.0",
     "gulp-sequence": "^1.0.0",
-    "gulp-svgmin": "^2.2.0",
+    "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "normalize.css": "^8.0.1",
